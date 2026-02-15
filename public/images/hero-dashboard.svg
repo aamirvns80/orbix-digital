@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0f1a"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="chartLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <clipPath id="roundCard1"><rect x="40" y="90" width="250" height="130" rx="16"/></clipPath>
+    <clipPath id="roundCard2"><rect x="310" y="90" width="250" height="130" rx="16"/></clipPath>
+    <clipPath id="roundCard3"><rect x="580" y="90" width="250" height="130" rx="16"/></clipPath>
+    <clipPath id="roundCard4"><rect x="850" y="90" width="310" height="130" rx="16"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+
+  <!-- Subtle background glow -->
+  <circle cx="300" cy="300" r="300" fill="#8b5cf6" opacity="0.03"/>
+  <circle cx="900" cy="400" r="250" fill="#3b82f6" opacity="0.03"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="1200" height="56" fill="#16162a" opacity="0.9"/>
+  <circle cx="30" cy="28" r="6" fill="#8b5cf6"/>
+  <rect x="48" y="20" width="100" height="16" rx="4" fill="#8b5cf6" opacity="0.8"/>
+  <rect x="400" y="22" width="400" height="12" rx="6" fill="#1e1e36"/>
+  <circle cx="1100" cy="28" r="14" fill="#1e1e36"/>
+  <circle cx="1100" cy="28" r="10" fill="#2a2a4a"/>
+  <circle cx="1140" cy="28" r="14" fill="#1e1e36"/>
+  <text x="1137" y="33" font-family="Arial" font-size="14" fill="#6366f1">⚡</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="56" width="200" height="619" fill="#13132a" opacity="0.9"/>
+  <rect x="16" y="80" width="168" height="36" rx="8" fill="url(#purpleGrad)" opacity="0.15"/>
+  <rect x="40" y="92" width="80" height="12" rx="3" fill="#8b5cf6"/>
+  <circle cx="28" cy="98" r="5" fill="#8b5cf6"/>
+  <rect x="40" y="132" width="70" height="10" rx="3" fill="#3a3a5c" opacity="0.5"/>
+  <circle cx="28" cy="137" r="4" fill="#3a3a5c" opacity="0.4"/>
+  <rect x="40" y="162" width="90" height="10" rx="3" fill="#3a3a5c" opacity="0.5"/>
+  <circle cx="28" cy="167" r="4" fill="#3a3a5c" opacity="0.4"/>
+  <rect x="40" y="192" width="60" height="10" rx="3" fill="#3a3a5c" opacity="0.5"/>
+  <circle cx="28" cy="197" r="4" fill="#3a3a5c" opacity="0.4"/>
+  <rect x="40" y="222" width="75" height="10" rx="3" fill="#3a3a5c" opacity="0.5"/>
+  <circle cx="28" cy="227" r="4" fill="#3a3a5c" opacity="0.4"/>
+  <rect x="40" y="252" width="85" height="10" rx="3" fill="#3a3a5c" opacity="0.5"/>
+  <circle cx="28" cy="257" r="4" fill="#3a3a5c" opacity="0.4"/>
+
+  <!-- Stat Cards Row -->
+  <!-- Card 1: Leads -->
+  <rect x="220" y="76" width="220" height="110" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <rect x="220" y="76" width="220" height="110" rx="16" fill="url(#purpleGrad)" opacity="0.08"/>
+  <text x="240" y="108" font-family="Arial,sans-serif" font-size="13" fill="#9ca3af">Total Leads</text>
+  <text x="240" y="142" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff">12,847</text>
+  <rect x="240" y="156" width="50" height="16" rx="8" fill="#10b981" opacity="0.15"/>
+  <text x="250" y="168" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#10b981">+24%</text>
+  <circle cx="410" cy="120" r="22" fill="url(#purpleGrad)" opacity="0.15"/>
+  <text x="403" y="126" font-family="Arial,sans-serif" font-size="16" fill="#8b5cf6">👥</text>
+
+  <!-- Card 2: Revenue -->
+  <rect x="460" y="76" width="220" height="110" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <rect x="460" y="76" width="220" height="110" rx="16" fill="url(#blueGrad)" opacity="0.08"/>
+  <text x="480" y="108" font-family="Arial,sans-serif" font-size="13" fill="#9ca3af">Revenue</text>
+  <text x="480" y="142" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff">$2.4M</text>
+  <rect x="480" y="156" width="50" height="16" rx="8" fill="#10b981" opacity="0.15"/>
+  <text x="490" y="168" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#10b981">+18%</text>
+  <circle cx="650" cy="120" r="22" fill="url(#blueGrad)" opacity="0.15"/>
+  <text x="643" y="126" font-family="Arial,sans-serif" font-size="16" fill="#3b82f6">💰</text>
+
+  <!-- Card 3: Conversion -->
+  <rect x="700" y="76" width="220" height="110" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <rect x="700" y="76" width="220" height="110" rx="16" fill="url(#greenGrad)" opacity="0.08"/>
+  <text x="720" y="108" font-family="Arial,sans-serif" font-size="13" fill="#9ca3af">Conversion</text>
+  <text x="720" y="142" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff">8.4%</text>
+  <rect x="720" y="156" width="50" height="16" rx="8" fill="#10b981" opacity="0.15"/>
+  <text x="730" y="168" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#10b981">+5.2%</text>
+  <circle cx="890" cy="120" r="22" fill="url(#greenGrad)" opacity="0.15"/>
+  <text x="883" y="126" font-family="Arial,sans-serif" font-size="16" fill="#10b981">📈</text>
+
+  <!-- Card 4: Satisfaction -->
+  <rect x="940" y="76" width="220" height="110" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <rect x="940" y="76" width="220" height="110" rx="16" fill="url(#pinkGrad)" opacity="0.08"/>
+  <text x="960" y="108" font-family="Arial,sans-serif" font-size="13" fill="#9ca3af">Satisfaction</text>
+  <text x="960" y="142" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#ffffff">98%</text>
+  <rect x="960" y="156" width="50" height="16" rx="8" fill="#10b981" opacity="0.15"/>
+  <text x="970" y="168" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#10b981">+2.1%</text>
+  <circle cx="1130" cy="120" r="22" fill="url(#pinkGrad)" opacity="0.15"/>
+  <text x="1123" y="126" font-family="Arial,sans-serif" font-size="16" fill="#ec4899">⭐</text>
+
+  <!-- Main Chart Area -->
+  <rect x="220" y="206" width="540" height="280" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <text x="240" y="238" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Lead Growth Overview</text>
+  <text x="240" y="256" font-family="Arial,sans-serif" font-size="11" fill="#6b7280">Last 12 months performance</text>
+
+  <!-- Chart grid lines -->
+  <line x1="260" y1="280" x2="740" y2="280" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="260" y1="320" x2="740" y2="320" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="260" y1="360" x2="740" y2="360" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="260" y1="400" x2="740" y2="400" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="260" y1="440" x2="740" y2="440" stroke="#2a2a4a" stroke-width="1"/>
+
+  <!-- Chart area fill -->
+  <polygon points="280,420 320,400 360,410 400,380 440,350 480,360 520,320 560,300 600,310 640,280 680,290 720,270 720,450 280,450" fill="url(#chartLine)" opacity="0.08"/>
+
+  <!-- Chart line -->
+  <polyline points="280,420 320,400 360,410 400,380 440,350 480,360 520,320 560,300 600,310 640,280 680,290 720,270" stroke="url(#chartLine)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- Chart dots -->
+  <circle cx="280" cy="420" r="4" fill="#8b5cf6"/>
+  <circle cx="320" cy="400" r="4" fill="#8b5cf6"/>
+  <circle cx="400" cy="380" r="4" fill="#7c3aed"/>
+  <circle cx="440" cy="350" r="4" fill="#6366f1"/>
+  <circle cx="520" cy="320" r="4" fill="#4f46e5"/>
+  <circle cx="560" cy="300" r="4" fill="#3b82f6"/>
+  <circle cx="640" cy="280" r="4" fill="#0ea5e9"/>
+  <circle cx="720" cy="270" r="5" fill="#06b6d4" filter="url(#glow)"/>
+
+  <!-- Chart month labels -->
+  <text x="275" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Jan</text>
+  <text x="315" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Feb</text>
+  <text x="355" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Mar</text>
+  <text x="395" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Apr</text>
+  <text x="435" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">May</text>
+  <text x="475" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Jun</text>
+  <text x="517" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Jul</text>
+  <text x="555" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Aug</text>
+  <text x="595" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Sep</text>
+  <text x="635" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Oct</text>
+  <text x="675" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Nov</text>
+  <text x="715" y="465" font-family="Arial,sans-serif" font-size="9" fill="#6b7280">Dec</text>
+
+  <!-- Right side: Pipeline Card -->
+  <rect x="780" y="206" width="380" height="280" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <text x="800" y="238" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Lead Pipeline</text>
+  <text x="800" y="256" font-family="Arial,sans-serif" font-size="11" fill="#6b7280">Active deals by stage</text>
+
+  <!-- Pipeline bars -->
+  <rect x="800" y="275" width="340" height="32" rx="8" fill="#1e1e36"/>
+  <rect x="800" y="275" width="300" height="32" rx="8" fill="url(#purpleGrad)" opacity="0.2"/>
+  <rect x="800" y="275" width="300" height="32" rx="8" fill="url(#purpleGrad)" opacity="0.1"/>
+  <text x="812" y="296" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#c4b5fd">New Leads</text>
+  <text x="1090" y="296" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#8b5cf6">147</text>
+
+  <rect x="800" y="317" width="340" height="32" rx="8" fill="#1e1e36"/>
+  <rect x="800" y="317" width="240" height="32" rx="8" fill="url(#blueGrad)" opacity="0.2"/>
+  <text x="812" y="338" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#93c5fd">Contacted</text>
+  <text x="1098" y="338" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3b82f6">98</text>
+
+  <rect x="800" y="359" width="340" height="32" rx="8" fill="#1e1e36"/>
+  <rect x="800" y="359" width="190" height="32" rx="8" fill="url(#greenGrad)" opacity="0.2"/>
+  <text x="812" y="380" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#86efac">Qualified</text>
+  <text x="1098" y="380" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#10b981">64</text>
+
+  <rect x="800" y="401" width="340" height="32" rx="8" fill="#1e1e36"/>
+  <rect x="800" y="401" width="140" height="32" rx="8" fill="#f59e0b" opacity="0.15"/>
+  <text x="812" y="422" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fcd34d">Proposal</text>
+  <text x="1098" y="422" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#f59e0b">38</text>
+
+  <rect x="800" y="443" width="340" height="32" rx="8" fill="#1e1e36"/>
+  <rect x="800" y="443" width="95" height="32" rx="8" fill="url(#pinkGrad)" opacity="0.2"/>
+  <text x="812" y="464" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fda4af">Closed Won</text>
+  <text x="1098" y="464" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#ec4899">22</text>
+
+  <!-- Bottom Row Cards -->
+  <!-- Recent Activity -->
+  <rect x="220" y="506" width="380" height="150" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <text x="240" y="536" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Recent Activity</text>
+
+  <circle cx="250" cy="562" r="6" fill="#10b981"/>
+  <text x="266" y="566" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">New lead from Google Ads campaign</text>
+  <text x="520" y="566" font-family="Arial,sans-serif" font-size="10" fill="#6b7280">2m ago</text>
+
+  <circle cx="250" cy="588" r="6" fill="#8b5cf6"/>
+  <text x="266" y="592" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Proposal sent to FinEdge Capital</text>
+  <text x="520" y="592" font-family="Arial,sans-serif" font-size="10" fill="#6b7280">15m ago</text>
+
+  <circle cx="250" cy="614" r="6" fill="#3b82f6"/>
+  <text x="266" y="618" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Blog post published: SEO Trends</text>
+  <text x="520" y="618" font-family="Arial,sans-serif" font-size="10" fill="#6b7280">1h ago</text>
+
+  <circle cx="250" cy="640" r="6" fill="#f59e0b"/>
+  <text x="266" y="644" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Deal closed: GrowthLab ($48K)</text>
+  <text x="520" y="644" font-family="Arial,sans-serif" font-size="10" fill="#6b7280">2h ago</text>
+
+  <!-- Donut Chart Card -->
+  <rect x="620" y="506" width="540" height="150" rx="16" fill="#1c1c36" filter="url(#cardShadow)"/>
+  <text x="640" y="536" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#ffffff">Traffic Sources</text>
+
+  <!-- Donut chart -->
+  <circle cx="720" cy="600" r="40" fill="none" stroke="#1e1e36" stroke-width="12"/>
+  <circle cx="720" cy="600" r="40" fill="none" stroke="#8b5cf6" stroke-width="12" stroke-dasharray="100 151" stroke-dashoffset="0" transform="rotate(-90 720 600)"/>
+  <circle cx="720" cy="600" r="40" fill="none" stroke="#3b82f6" stroke-width="12" stroke-dasharray="63 188" stroke-dashoffset="-100" transform="rotate(-90 720 600)"/>
+  <circle cx="720" cy="600" r="40" fill="none" stroke="#10b981" stroke-width="12" stroke-dasharray="50 201" stroke-dashoffset="-163" transform="rotate(-90 720 600)"/>
+  <circle cx="720" cy="600" r="40" fill="none" stroke="#f59e0b" stroke-width="12" stroke-dasharray="38 213" stroke-dashoffset="-213" transform="rotate(-90 720 600)"/>
+  <text x="708" y="605" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff">4.2K</text>
+
+  <!-- Donut legend -->
+  <circle cx="800" cy="560" r="5" fill="#8b5cf6"/>
+  <text x="812" y="564" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Organic — 40%</text>
+  <circle cx="800" cy="584" r="5" fill="#3b82f6"/>
+  <text x="812" y="588" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Paid Ads — 25%</text>
+  <circle cx="800" cy="608" r="5" fill="#10b981"/>
+  <text x="812" y="612" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Social — 20%</text>
+  <circle cx="800" cy="632" r="5" fill="#f59e0b"/>
+  <text x="812" y="636" font-family="Arial,sans-serif" font-size="11" fill="#d1d5db">Referral — 15%</text>
+
+  <!-- Bar chart mini -->
+  <rect x="960" y="628" width="24" height="26" rx="4" fill="url(#purpleGrad)" opacity="0.6"/>
+  <rect x="992" y="610" width="24" height="44" rx="4" fill="url(#purpleGrad)" opacity="0.7"/>
+  <rect x="1024" y="595" width="24" height="59" rx="4" fill="url(#purpleGrad)" opacity="0.8"/>
+  <rect x="1056" y="575" width="24" height="79" rx="4" fill="url(#blueGrad)" opacity="0.85"/>
+  <rect x="1088" y="558" width="24" height="96" rx="4" fill="url(#blueGrad)" opacity="0.9"/>
+  <rect x="1120" y="548" width="24" height="106" rx="4" fill="url(#blueGrad)"/>
+  <text x="960" y="555" font-family="Arial,sans-serif" font-size="11" fill="#6b7280">Weekly visits</text>
+</svg>

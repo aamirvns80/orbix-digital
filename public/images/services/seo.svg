@@ -1,0 +1,40 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#grad)"/>
+  
+  <!-- Grid -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <path d="M 0 50 L 800 50 M 0 150 L 800 150 M 0 250 L 800 250 M 0 350 L 800 350"/>
+    <path d="M 100 0 L 100 450 M 300 0 L 300 450 M 500 0 L 500 450 M 700 0 L 700 450"/>
+  </g>
+
+  <!-- Trend Line -->
+  <polyline points="100,350 250,280 400,300 550,150 700,100" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Data Points -->
+  <g fill="#3b82f6">
+    <circle cx="100" cy="350" r="6"/>
+    <circle cx="250" cy="280" r="6"/>
+    <circle cx="400" cy="300" r="6"/>
+  </g>
+  <circle cx="550" cy="150" r="6" fill="#06b6d4"/>
+  <circle cx="700" cy="100" r="8" fill="#06b6d4" stroke="white" stroke-width="2"/>
+
+  <!-- Search Icon Elements -->
+  <circle cx="650" cy="150" r="80" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <line x1="710" y1="210" x2="750" y2="250" stroke="rgba(255,255,255,0.1)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <text x="400" y="420" font-family="sans-serif" font-size="14" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="2">SEO &amp; GROWTH</text>
+</svg>

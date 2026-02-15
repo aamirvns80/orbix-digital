@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <circle cx="40" cy="40" r="40" fill="url(#a3)"/>
+  <circle cx="40" cy="30" r="12" fill="#fff" opacity="0.9"/>
+  <path d="M18 65 Q18 48 40 48 Q62 48 62 65" fill="#fff" opacity="0.9"/>
+  <circle cx="40" cy="30" r="10" fill="url(#a3b)"/>
+  <ellipse cx="40" cy="29" rx="6" ry="7" fill="#F5D5B8"/>
+  <path d="M33 26 Q33 17 40 17 Q47 17 47 26 L47 23 L45 24 L43 22 L40 24 L37 22 L35 24 L33 23Z" fill="#1A1A1A"/>
+  <circle cx="37" cy="28" r="1" fill="#333"/>
+  <circle cx="43" cy="28" r="1" fill="#333"/>
+  <path d="M38 32 Q40 33 42 32" stroke="#333" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="a3" x1="0" y1="0" x2="80" y2="80"><stop stop-color="#F59E0B"/><stop offset="1" stop-color="#EF4444"/></linearGradient>
+    <linearGradient id="a3b" x1="30" y1="20" x2="50" y2="40"><stop stop-color="#FDE8D0"/><stop offset="1" stop-color="#F5D5B8"/></linearGradient>
+  </defs>
+</svg>

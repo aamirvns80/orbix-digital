@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c1929"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="200" r="220" fill="#0ea5e9" opacity="0.03"/>
+
+  <!-- Growth staircase -->
+  <rect x="150" y="320" width="90" height="60" rx="8" fill="#0ea5e9" opacity="0.1" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="180" y="356" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#7dd3fc">5</text>
+
+  <rect x="260" y="270" width="90" height="110" rx="8" fill="#0ea5e9" opacity="0.13" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="288" y="330" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#7dd3fc">10</text>
+
+  <rect x="370" y="210" width="90" height="170" rx="8" fill="#0ea5e9" opacity="0.16" stroke="#0ea5e9" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="398" y="300" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#7dd3fc">20</text>
+
+  <rect x="480" y="150" width="90" height="230" rx="8" fill="#3b82f6" opacity="0.19" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="508" y="270" font-family="Arial,sans-serif" font-size="18" font-weight="bold" fill="#93c5fd">35</text>
+
+  <rect x="590" y="90" width="90" height="290" rx="8" fill="#3b82f6" opacity="0.22" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.5"/>
+  <text x="618" y="240" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#bfdbfe">50</text>
+
+  <!-- Arrow on top -->
+  <polyline points="195,310 305,260 415,200 525,140 635,80" stroke="url(#acc)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <text x="650" y="75" font-family="Arial" font-size="20" fill="#10b981">🚀</text>
+
+  <!-- Label under each -->
+  <text x="195" y="400" font-family="Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Year 1</text>
+  <text x="305" y="400" font-family="Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Year 2</text>
+  <text x="415" y="400" font-family="Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Year 3</text>
+  <text x="525" y="400" font-family="Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Year 4</text>
+  <text x="635" y="400" font-family="Arial,sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Year 5</text>
+
+  <text x="400" y="100" font-family="Arial,sans-serif" font-size="13" fill="#6b7280" text-anchor="middle">Clients per agency</text>
+
+  <text x="400" y="435" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.2)" text-anchor="middle" letter-spacing="2">SCALING AGENCY OPERATIONS</text>
+</svg>

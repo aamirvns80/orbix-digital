@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 32" fill="none">
+  <rect x="4" y="8" width="24" height="16" rx="4" fill="url(#vm1)"/>
+  <path d="M11 14 L15 20 L21 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="36" y="21" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="currentColor" opacity="0.5">VelocityMKT</text>
+  <defs><linearGradient id="vm1" x1="4" y1="8" x2="28" y2="24"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs>
+</svg>

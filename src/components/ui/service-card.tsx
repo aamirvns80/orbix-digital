@@ -1,0 +1,64 @@
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, type LucideIcon } from "lucide-react";
+
+interface ServiceCardProps {
+    icon: LucideIcon;
+    title: string;
+    description: string;
+    features: string[];
+    href?: string;
+    color?: string;
+    bgColor?: string;
+    image?: string;
+}
+
+export function ServiceCard({
+    icon: Icon,
+    title,
+    description,
+    features,
+    href = "/contact",
+    color = "text-primary",
+    bgColor = "bg-primary/10",
+    image,
+}: ServiceCardProps) {
+    return (
+        <div className="group rounded-xl border border-border bg-card overflow-hidden transition-all duration-300 hover:shadow-xl hover:border-primary/30 hover:-translate-y-1">
+            {image && (
+                <div className="relative h-48 w-full overflow-hidden bg-muted/50">
+                    <Image
+                        src={image}
+                        alt={title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                </div>
+            )}
+            <div className="p-6 sm:p-8">
+                <div className={`h-12 w-12 rounded-xl ${bgColor} flex items-center justify-center mb-5`}>
+                    <Icon className={`h-6 w-6 ${color}`} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    {description}
+                </p>
+                <ul className="space-y-2 mb-6">
+                    {features.map((f) => (
+                        <li key={f} className="flex items-start gap-2 text-sm">
+                            <span className={`mt-1 h-1.5 w-1.5 rounded-full ${bgColor} flex-shrink-0`} />
+                            <span className="text-muted-foreground">{f}</span>
+                        </li>
+                    ))}
+                </ul>
+                <Link
+                    href={href}
+                    className={`inline-flex items-center gap-1 text-sm font-medium ${color} hover:underline group-hover:gap-2 transition-all`}
+                >
+                    Get started <ArrowRight className="h-4 w-4" />
+                </Link>
+            </div>
+        </div>
+    );
+}

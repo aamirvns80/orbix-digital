@@ -1,0 +1,158 @@
+﻿
+> marketing_agency@0.1.0 build C:\Users\Hp\Desktop\marketing_agency
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local, .env
+
+node.exe : ΓÜá The 
+"middleware" file 
+convention is 
+deprecated. Please use 
+"proxy" instead. Learn 
+more: https://nextjs.or
+g/docs/messages/middlew
+are-to-proxy
+At C:\Users\Hp\AppData\
+Roaming\npm\pnpm.ps1:24
+ char:5
++     & "node$exe"  "$b
+asedir/node_modules/pnp
+m/bin/pnpm.cjs" $args
++     ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (ΓÜá The "midd   
+ le...leware-to-pro    
+xy:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 44s
+  Running TypeScript ...
+Failed to compile.
+
+./scripts/link-user-com
+pany.ts:25:52
+Type error: No 
+overload matches this 
+call.
+  Overload 1 of 2, 
+'(value: { name: 
+string | SQL<unknown> 
+| Placeholder<string, 
+any>; id?: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any> | undefined; 
+email?: string | 
+SQL<unknown> | 
+Placeholder<...> | 
+null | undefined; ... 
+7 more ...; 
+updatedAt?: SQL<...> | 
+... 2 more ... | 
+undefined; }): 
+PgInsertBase<...>', 
+gave the following 
+error.
+    Object literal may 
+only specify known 
+properties, and 'slug' 
+does not exist in type 
+'{ name: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any>; id?: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any> | undefined; 
+email?: string | 
+SQL<unknown> | 
+Placeholder<...> | 
+null | undefined; ... 
+7 more ...; 
+updatedAt?: SQL<...> | 
+... 2 more ... | 
+undefined; }'.
+  Overload 2 of 2, 
+'(values: { name: 
+string | SQL<unknown> 
+| Placeholder<string, 
+any>; id?: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any> | undefined; 
+email?: string | 
+SQL<unknown> | 
+Placeholder<...> | 
+null | undefined; ... 
+7 more ...; 
+updatedAt?: SQL<...> | 
+... 2 more ... | 
+undefined; }[]): 
+PgInsertBase<...>', 
+gave the following 
+error.
+    Object literal may 
+only specify known 
+properties, and 'name' 
+does not exist in type 
+'{ name: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any>; id?: string | 
+SQL<unknown> | 
+Placeholder<string, 
+any> | undefined; 
+email?: string | 
+SQL<unknown> | 
+Placeholder<...> | 
+null | undefined; ... 
+7 more ...; 
+updatedAt?: SQL<...> | 
+... 2 more ... | 
+undefined; }[]'.
+
+[0m [90m 23 |[39m   
+      [36mif[39m 
+([33m![39mcompany) {
+ [90m 24 |[39m       
+      console[33m.[39
+mlog([32m"No company 
+found. Creating one..."
+[39m)[33m;[39m
+[31m[1m>[22m[39m[9
+0m 25 |[39m           
+  [company] 
+[33m=[39m 
+[36mawait[39m db[33m
+.[39minsert(companies)
+[33m.[39mvalues({
+ [90m    |[39m       
+                       
+                      
+[31m[1m^[22m[39m
+ [90m 26 |[39m       
+          
+name[33m:[39m 
+[32m"Test Client Compa
+ny"[39m[33m,[39m
+ [90m 27 |[39m       
+          
+slug[33m:[39m [32m"t
+est-client"[39m[33m,
+[39m
+ [90m 28 |[39m       
+          
+status[33m:[39m 
+[32m"active"[39m[0m
+Next.js build worker 
+exited with code: 1 
+and signal: null
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.

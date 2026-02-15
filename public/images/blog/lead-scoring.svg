@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c1929"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="600" cy="180" r="200" fill="#3b82f6" opacity="0.04"/>
+
+  <!-- Funnel visualization -->
+  <path d="M 200 80 L 600 80 L 520 180 L 520 200 L 280 200 L 280 180 Z" fill="none" stroke="url(#acc)" stroke-width="3" opacity="0.5"/>
+  <path d="M 280 210 L 520 210 L 480 290 L 480 310 L 320 310 L 320 290 Z" fill="none" stroke="url(#acc)" stroke-width="3" opacity="0.4"/>
+  <path d="M 320 320 L 480 320 L 440 380 L 360 380 Z" fill="none" stroke="url(#acc)" stroke-width="3" opacity="0.3"/>
+
+  <!-- Stars rating -->
+  <text x="340" y="155" font-family="Arial" font-size="24" fill="#f59e0b">★★★★★</text>
+
+  <!-- Score badges -->
+  <rect x="350" y="260" width="60" height="24" rx="12" fill="#3b82f6" opacity="0.2"/>
+  <text x="365" y="277" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#60a5fa">A+</text>
+  <rect x="420" y="260" width="60" height="24" rx="12" fill="#10b981" opacity="0.2"/>
+  <text x="432" y="277" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#34d399">92%</text>
+
+  <!-- Floating dots -->
+  <circle cx="250" cy="100" r="6" fill="#06b6d4" opacity="0.6"/>
+  <circle cx="350" cy="85" r="4" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="450" cy="90" r="5" fill="#06b6d4" opacity="0.4"/>
+  <circle cx="550" cy="100" r="4" fill="#3b82f6" opacity="0.5"/>
+
+  <text x="400" y="425" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.2)" text-anchor="middle" letter-spacing="2">LEAD SCORING GUIDE</text>
+</svg>
