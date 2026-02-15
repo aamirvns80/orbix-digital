@@ -76,6 +76,7 @@ function ContactForm() {
     const [isLoading, setIsLoading] = useState(false);
     const [selectedServices, setSelectedServices] = useState<string[]>([]);
     const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+    const [fieldErrors, setFieldErrors] = useState<Record<string, string[]>>({});
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -121,11 +122,23 @@ function ContactForm() {
 
     function updateField(field: string, value: string) {
         setFormData((prev) => ({ ...prev, [field]: value }));
+        // Clear error for this field when user starts typing
+        if (fieldErrors[field]) {
+            setFieldErrors((prev) => {
+                const next = { ...prev };
+                delete next[field];
+                return next;
+            });
+        }
     }
 
     async function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
-        if (!formData.email) return;
+        setFieldErrors({});
+        if (!formData.email) {
+            setFieldErrors({ email: ["Email is required"] });
+            return;
+        }
         setIsLoading(true);
 
         try {
@@ -147,7 +160,13 @@ function ContactForm() {
                 setSubmitted(true);
             } else {
                 const data = await res.json();
-                toast(data.error || "Something went wrong");
+                // Show field-specific errors if available
+                if (data.details?.fieldErrors) {
+                    setFieldErrors(data.details.fieldErrors);
+                    toast("Please fix the highlighted fields below.");
+                } else {
+                    toast(data.error || "Something went wrong");
+                }
             }
         } catch {
             toast("Failed to submit. Please try again.");
@@ -344,7 +363,11 @@ function ContactForm() {
                                                     value={formData.firstName}
                                                     onChange={(e) => updateField("firstName", e.target.value)}
                                                     placeholder="John"
+                                                    className={fieldErrors.firstName ? "border-red-500 focus:ring-red-500" : ""}
                                                 />
+                                                {fieldErrors.firstName && (
+                                                    <p className="text-xs text-red-500">{fieldErrors.firstName[0]}</p>
+                                                )}
                                             </div>
                                             <div className="space-y-2">
                                                 <Label htmlFor="lastName">Last Name</Label>
@@ -353,7 +376,11 @@ function ContactForm() {
                                                     value={formData.lastName}
                                                     onChange={(e) => updateField("lastName", e.target.value)}
                                                     placeholder="Doe"
+                                                    className={fieldErrors.lastName ? "border-red-500 focus:ring-red-500" : ""}
                                                 />
+                                                {fieldErrors.lastName && (
+                                                    <p className="text-xs text-red-500">{fieldErrors.lastName[0]}</p>
+                                                )}
                                             </div>
                                         </div>
                                         <div className="space-y-2">
@@ -365,7 +392,11 @@ function ContactForm() {
                                                 onChange={(e) => updateField("email", e.target.value)}
                                                 placeholder="john@company.com"
                                                 required
+                                                className={fieldErrors.email ? "border-red-500 focus:ring-red-500" : ""}
                                             />
+                                            {fieldErrors.email && (
+                                                <p className="text-xs text-red-500">{fieldErrors.email[0]}</p>
+                                            )}
                                         </div>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                             <div className="space-y-2">
@@ -375,7 +406,11 @@ function ContactForm() {
                                                     value={formData.company}
                                                     onChange={(e) => updateField("company", e.target.value)}
                                                     placeholder="Acme Inc"
+                                                    className={fieldErrors.company ? "border-red-500 focus:ring-red-500" : ""}
                                                 />
+                                                {fieldErrors.company && (
+                                                    <p className="text-xs text-red-500">{fieldErrors.company[0]}</p>
+                                                )}
                                             </div>
                                             <div className="space-y-2">
                                                 <Label htmlFor="phone">Phone</Label>
@@ -385,7 +420,11 @@ function ContactForm() {
                                                     value={formData.phone}
                                                     onChange={(e) => updateField("phone", e.target.value)}
                                                     placeholder="+1 (555) 123-4567"
+                                                    className={fieldErrors.phone ? "border-red-500 focus:ring-red-500" : ""}
                                                 />
+                                                {fieldErrors.phone && (
+                                                    <p className="text-xs text-red-500">{fieldErrors.phone[0]}</p>
+                                                )}
                                             </div>
                                         </div>
                                     </div>

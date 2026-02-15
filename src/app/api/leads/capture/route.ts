@@ -4,23 +4,27 @@ import { z } from "zod";
 import { db } from "@/db";
 import { leads, leadActivities } from "@/db/schema";
 
+// Transform empty strings to undefined so optional validators work correctly
+const emptyToUndefined = z.literal("").transform(() => undefined);
+
 const captureSchema = z.object({
-    email: z.string().email(),
-    firstName: z.string().max(100).optional(),
-    lastName: z.string().max(100).optional(),
-    company: z.string().max(200).optional(),
-    phone: z.string().max(50).optional(),
-    website: z.string().url().optional(),
+    email: z.string().email("Please enter a valid email address"),
+    firstName: z.string().max(100).optional().or(emptyToUndefined),
+    lastName: z.string().max(100).optional().or(emptyToUndefined),
+    company: z.string().max(200).optional().or(emptyToUndefined),
+    phone: z.string().max(50).optional().or(emptyToUndefined),
+    website: z.string().max(500).optional().or(emptyToUndefined),
     serviceInterest: z.array(z.string()).optional(),
-    budget: z.string().optional(),
-    timeline: z.string().optional(),
+    budget: z.string().optional().or(emptyToUndefined),
+    timeline: z.string().optional().or(emptyToUndefined),
     source: z.string().default("website"),
-    utmSource: z.string().optional(),
-    utmMedium: z.string().optional(),
-    utmCampaign: z.string().optional(),
-    utmTerm: z.string().optional(),
-    utmContent: z.string().optional(),
-    message: z.string().max(5000).optional(),
+    utmSource: z.string().optional().or(emptyToUndefined),
+    utmMedium: z.string().optional().or(emptyToUndefined),
+    utmCampaign: z.string().optional().or(emptyToUndefined),
+    utmTerm: z.string().optional().or(emptyToUndefined),
+    utmContent: z.string().optional().or(emptyToUndefined),
+    message: z.string().max(5000).optional().or(emptyToUndefined),
+    selectedPlan: z.string().optional().or(emptyToUndefined),
 });
 
 const corsHeaders = {
@@ -39,8 +43,12 @@ export async function POST(request: NextRequest) {
         const parsed = captureSchema.safeParse(body);
 
         if (!parsed.success) {
+            const fieldErrors = parsed.error.flatten().fieldErrors;
+            const errorMessages = Object.entries(fieldErrors)
+                .map(([field, msgs]) => `${field}: ${(msgs as string[]).join(", ")}`)
+                .join("; ");
             return NextResponse.json(
-                { error: "Invalid input", details: parsed.error.flatten() },
+                { error: errorMessages || "Invalid input", details: parsed.error.flatten() },
                 { status: 400, headers: corsHeaders }
             );
         }
