@@ -141,8 +141,10 @@ export async function POST(request: NextRequest) {
         );
     } catch (error) {
         console.error("Lead capture error:", error);
+        const errorMessage = error instanceof Error ? error.message : "Unknown error";
+        const errorStack = error instanceof Error ? error.stack : undefined;
         return NextResponse.json(
-            { error: "Something went wrong. Please try again." },
+            { error: "Something went wrong. Please try again.", debug: { message: errorMessage, stack: errorStack } },
             { status: 500, headers: corsHeaders }
         );
     }
