@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="waBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#128C7E" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="waGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25D366"/>
+      <stop offset="100%" stop-color="#128C7E"/>
+    </linearGradient>
+    <linearGradient id="waLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DCF8C6"/>
+      <stop offset="100%" stop-color="#B8F0A8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" rx="20" fill="url(#waBg)"/>
+
+  <!-- Phone outline -->
+  <rect x="130" y="30" width="140" height="240" rx="18" fill="#1a1a2e" stroke="url(#waGreen)" stroke-width="2.5"/>
+  <rect x="138" y="50" width="124" height="200" rx="4" fill="#0d1117"/>
+
+  <!-- Status bar -->
+  <rect x="138" y="50" width="124" height="28" rx="4" fill="#075E54"/>
+  <circle cx="152" cy="64" r="8" fill="#25D366" opacity="0.6"/>
+  <rect x="164" y="60" width="50" height="4" rx="2" fill="white" opacity="0.8"/>
+  <rect x="164" y="67" width="30" height="3" rx="1.5" fill="white" opacity="0.4"/>
+
+  <!-- Chat bubble 1 (received) -->
+  <rect x="144" y="86" width="80" height="24" rx="10" fill="#1e2d3d"/>
+  <rect x="150" y="93" width="45" height="4" rx="2" fill="#8696a7"/>
+  <rect x="150" y="100" width="30" height="3" rx="1.5" fill="#5a6a7a"/>
+
+  <!-- Chat bubble 2 (sent - green) -->
+  <rect x="186" y="118" width="72" height="24" rx="10" fill="url(#waLight)"/>
+  <rect x="192" y="125" width="40" height="4" rx="2" fill="#2d6a3f"/>
+  <rect x="192" y="132" width="25" height="3" rx="1.5" fill="#4a8a5f"/>
+  <!-- Double check mark -->
+  <path d="M248 134 L251 137 L256 131" stroke="#34B7F1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M245 134 L248 137 L253 131" stroke="#34B7F1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Chat bubble 3 (received) -->
+  <rect x="144" y="150" width="90" height="24" rx="10" fill="#1e2d3d"/>
+  <rect x="150" y="157" width="55" height="4" rx="2" fill="#8696a7"/>
+  <rect x="150" y="164" width="35" height="3" rx="1.5" fill="#5a6a7a"/>
+
+  <!-- Chat bubble 4 (sent - green) -->
+  <rect x="176" y="182" width="82" height="24" rx="10" fill="url(#waLight)"/>
+  <rect x="182" y="189" width="50" height="4" rx="2" fill="#2d6a3f"/>
+  <rect x="182" y="196" width="32" height="3" rx="1.5" fill="#4a8a5f"/>
+  <!-- Double check mark -->
+  <path d="M248 198 L251 201 L256 195" stroke="#34B7F1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M245 198 L248 201 L253 195" stroke="#34B7F1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Message input bar -->
+  <rect x="138" y="218" width="124" height="26" rx="13" fill="#1e2d3d"/>
+  <rect x="150" y="228" width="60" height="4" rx="2" fill="#5a6a7a"/>
+  <circle cx="248" cy="231" r="9" fill="url(#waGreen)"/>
+  <path d="M244 231 L250 228 L250 234 Z" fill="white"/>
+
+  <!-- Megaphone / broadcast icon (left side) -->
+  <g transform="translate(30, 80)">
+    <circle cx="30" cy="30" r="28" fill="url(#waGreen)" opacity="0.15"/>
+    <path d="M20 24 L28 20 L28 40 L20 36 Z" fill="url(#waGreen)"/>
+    <rect x="14" y="24" width="8" height="12" rx="2" fill="url(#waGreen)"/>
+    <path d="M28 25 Q38 30 28 35" stroke="#25D366" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M28 20 Q42 30 28 40" stroke="#25D366" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Chart / analytics icon (right side) -->
+  <g transform="translate(295, 80)">
+    <circle cx="30" cy="30" r="28" fill="url(#waGreen)" opacity="0.15"/>
+    <rect x="16" y="34" width="8" height="14" rx="2" fill="url(#waGreen)" opacity="0.6"/>
+    <rect x="26" y="26" width="8" height="22" rx="2" fill="url(#waGreen)" opacity="0.8"/>
+    <rect x="36" y="18" width="8" height="30" rx="2" fill="url(#waGreen)"/>
+  </g>
+
+  <!-- Bot / chatbot icon (left bottom) -->
+  <g transform="translate(40, 180)">
+    <circle cx="24" cy="24" r="22" fill="url(#waGreen)" opacity="0.12"/>
+    <rect x="12" y="14" width="24" height="18" rx="6" fill="url(#waGreen)"/>
+    <circle cx="19" cy="22" r="2" fill="white"/>
+    <circle cx="29" cy="22" r="2" fill="white"/>
+    <rect x="20" y="32" width="8" height="4" rx="2" fill="url(#waGreen)" opacity="0.6"/>
+    <circle cx="8" cy="22" r="3" fill="url(#waGreen)" opacity="0.5"/>
+    <circle cx="40" cy="22" r="3" fill="url(#waGreen)" opacity="0.5"/>
+  </g>
+
+  <!-- Users / group icon (right bottom) -->
+  <g transform="translate(300, 190)">
+    <circle cx="28" cy="24" r="22" fill="url(#waGreen)" opacity="0.12"/>
+    <circle cx="22" cy="18" r="6" fill="url(#waGreen)" opacity="0.7"/>
+    <circle cx="34" cy="18" r="6" fill="url(#waGreen)"/>
+    <ellipse cx="22" cy="34" rx="9" ry="6" fill="url(#waGreen)" opacity="0.5"/>
+    <ellipse cx="34" cy="34" rx="9" ry="6" fill="url(#waGreen)" opacity="0.7"/>
+  </g>
+
+  <!-- Floating notification badges -->
+  <circle cx="275" cy="45" r="10" fill="#FF3B30"/>
+  <text x="275" y="49" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial">3</text>
+
+  <circle cx="110" cy="55" r="8" fill="#25D366"/>
+  <path d="M106 55 L109 58 L114 52" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

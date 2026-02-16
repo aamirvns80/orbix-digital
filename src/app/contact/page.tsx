@@ -39,6 +39,7 @@ const SERVICES = [
     "Influencer Marketing",
     "Celebrity Marketing",
     "AI Influencer",
+    "WhatsApp Marketing",
 ];
 
 const BUDGETS = [

@@ -11,6 +11,7 @@ import {
     Megaphone,
     Star,
     Bot,
+    MessageCircle,
 } from "lucide-react";
 import { PublicNav } from "@/components/public-nav";
 import { PublicFooter } from "@/components/public-footer";
@@ -180,6 +181,22 @@ const SERVICES = [
         color: "text-fuchsia-500",
         bgColor: "bg-fuchsia-500/10",
         image: "/images/services/ai-influencer.svg",
+    },
+    {
+        icon: MessageCircle,
+        title: "WhatsApp Marketing",
+        description: "Unlock the power of WhatsApp to engage customers directly, automate conversations, and drive conversions through the world's most popular messaging platform.",
+        features: [
+            "Bulk WhatsApp campaigns",
+            "WhatsApp Business API integration",
+            "Chatbot & auto-replies",
+            "Broadcast lists & group marketing",
+            "Click-to-WhatsApp ads",
+            "Performance analytics & reporting",
+        ],
+        color: "text-green-500",
+        bgColor: "bg-green-500/10",
+        image: "/images/services/whatsapp.svg",
     },
 ];
 

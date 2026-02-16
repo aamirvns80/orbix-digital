@@ -15,6 +15,12 @@ const FOOTER_LINKS = {
         { label: "Web Development", href: "/services#web" },
         { label: "Email Marketing", href: "/services#email" },
         { label: "Brand Strategy", href: "/services#brand" },
+        { label: "Video Production", href: "/services#video" },
+        { label: "Analytics & Reporting", href: "/services#analytics" },
+        { label: "Influencer Marketing", href: "/services#influencer" },
+        { label: "Celebrity Marketing", href: "/services#celebrity" },
+        { label: "AI Influencer", href: "/services#ai" },
+        { label: "WhatsApp Marketing", href: "/services#whatsapp" },
     ],
     Resources: [
         { label: "Blog", href: "/blog" },
