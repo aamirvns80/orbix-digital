@@ -54,17 +54,19 @@ export function ServiceCard({
                         </li>
                     ))}
                 </ul>
-                {price && (
-                    <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${bgColor} mb-4`}>
-                        <span className={`text-sm font-semibold ${color}`}>{price}</span>
-                    </div>
-                )}
-                <Link
-                    href={href}
-                    className={`inline-flex items-center gap-1 text-sm font-medium ${color} hover:underline group-hover:gap-2 transition-all`}
-                >
-                    Get started <ArrowRight className="h-4 w-4" />
-                </Link>
+                <div className="flex flex-col items-start gap-3 mt-auto pt-4 border-t border-border/50">
+                    <Link
+                        href={href}
+                        className={`inline-flex items-center gap-2 text-sm font-semibold ${color} hover:gap-3 transition-all`}
+                    >
+                        Get started <ArrowRight className="h-4 w-4" />
+                    </Link>
+                    {price && (
+                        <p className="text-sm text-muted-foreground">
+                            <span className="opacity-70">From</span> <span className={`font-semibold ${color}`}>{price.replace("Starts at ", "")}</span>
+                        </p>
+                    )}
+                </div>
             </div>
         </div>
     );
