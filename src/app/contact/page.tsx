@@ -284,9 +284,9 @@ function ContactForm() {
                                     <p className="text-xs text-white/40 uppercase tracking-wider font-medium">Trusted by</p>
                                     <div className="flex items-center gap-4 flex-wrap opacity-50">
                                         {[
-                                            { name: "GrowthLab", src: "/images/logos/growthlab.svg" },
-                                            { name: "Brightwave", src: "/images/logos/brightwave.svg" },
-                                            { name: "NovaStar", src: "/images/logos/novastar.svg" },
+                                            { name: "TechVista", src: "/images/logos/growthlab.svg" },
+                                            { name: "BrandShakti", src: "/images/logos/brightwave.svg" },
+                                            { name: "NovaStar Digital", src: "/images/logos/novastar.svg" },
                                         ].map((logo) => (
                                             <Image
                                                 key={logo.name}

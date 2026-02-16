@@ -78,35 +78,35 @@ const SERVICES_PREVIEW = [
 ];
 
 const CLIENT_LOGOS = [
-  { name: "GrowthLab", src: "/images/logos/growthlab.svg" },
-  { name: "Brightwave", src: "/images/logos/brightwave.svg" },
-  { name: "Pixel & Pulse", src: "/images/logos/pixelpulse.svg" },
-  { name: "NovaStar", src: "/images/logos/novastar.svg" },
+  { name: "TechVista", src: "/images/logos/growthlab.svg" },
+  { name: "BrandShakti", src: "/images/logos/brightwave.svg" },
+  { name: "PixelCraft India", src: "/images/logos/pixelpulse.svg" },
+  { name: "NovaStar Digital", src: "/images/logos/novastar.svg" },
   { name: "VelocityMKT", src: "/images/logos/velocitymkt.svg" },
 ];
 
 const TESTIMONIALS = [
   {
-    quote: "OrbixDigital transformed how we manage our pipeline. We closed 3x more deals in the first quarter after switching.",
-    name: "Sarah Chen",
-    title: "CEO",
-    company: "GrowthLab Digital",
+    quote: "OrbixDigital completely transformed our lead management. We closed 3x more deals in the first quarter itself. Their team truly understands the Indian market.",
+    name: "Rajesh Sharma",
+    title: "Founder & CEO",
+    company: "TechVista Solutions, Mumbai",
     rating: 5,
     avatar: "/images/avatars/sarah-chen.svg",
   },
   {
-    quote: "The lead capture and CRM integration is seamless. Our team saves 10+ hours per week on manual data entry.",
-    name: "Marcus Rivera",
-    title: "Head of Operations",
-    company: "Brightwave Media",
+    quote: "The WhatsApp marketing and CRM integration is seamless. Our team saves 10+ hours per week on manual follow-ups. Best decision we made for our D2C brand.",
+    name: "Priya Mehta",
+    title: "Head of Marketing",
+    company: "BrandShakti, Bangalore",
     rating: 5,
     avatar: "/images/avatars/marcus-rivera.svg",
   },
   {
-    quote: "Finally, a platform built specifically for businesses. The pipeline view alone is worth the switch from our old CRM.",
-    name: "Emily Zhao",
-    title: "Founder",
-    company: "Pixel & Pulse",
+    quote: "Finally, a digital marketing partner that delivers real ROI. Our organic traffic grew 5x in 6 months and our cost per lead dropped by 60%. Highly recommended!",
+    name: "Amit Patel",
+    title: "Co-Founder",
+    company: "PixelCraft India, Ahmedabad",
     rating: 5,
     avatar: "/images/avatars/emily-zhao.svg",
   },
@@ -199,7 +199,7 @@ export default function HomePage() {
               { value: 500, suffix: "+", label: "Businesses Served" },
               { value: 12000, suffix: "+", label: "Leads Captured" },
               { value: 98, suffix: "%", label: "Client Satisfaction" },
-              { value: 2, prefix: "$", suffix: "M+", label: "Revenue Generated" },
+              { value: 2, prefix: "₹", suffix: "Cr+", label: "Revenue Generated" },
             ]}
           />
         </Container>
