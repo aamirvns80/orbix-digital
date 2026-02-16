@@ -9,20 +9,20 @@ import { toast } from "@/components/ui/toast";
 
 const FOOTER_LINKS = {
     Services: [
-        { label: "SEO & Content", href: "/services#seo" },
-        { label: "Paid Advertising", href: "/services#ppc" },
-        { label: "Social Media", href: "/services#social" },
-        { label: "Web Development", href: "/services#web" },
-        { label: "Email Marketing", href: "/services#email" },
-        { label: "Brand Strategy", href: "/services#brand" },
+        { label: "SEO & Content", href: "/services/seo-content-marketing" },
+        { label: "Paid Advertising", href: "/services/paid-advertising" },
+        { label: "Social Media", href: "/services/social-media-management" },
+        { label: "Web Development", href: "/services/web-design-development" },
+        { label: "Email Marketing", href: "/services/email-marketing" },
+        { label: "Brand Strategy", href: "/services/brand-strategy" },
     ],
     "More Services": [
-        { label: "Video Production", href: "/services#video" },
+        { label: "Video Production", href: "/services/video-production" },
         { label: "AI Automation", href: "/services/ai-automation" },
-        { label: "Influencer Marketing", href: "/services#influencer" },
-        { label: "Celebrity Marketing", href: "/services#celebrity" },
-        { label: "AI Influencer", href: "/services#ai" },
-        { label: "WhatsApp Marketing", href: "/services#whatsapp" },
+        { label: "Influencer Marketing", href: "/services/influencer-marketing" },
+        { label: "Celebrity Marketing", href: "/services/celebrity-marketing" },
+        { label: "AI Influencer", href: "/services/ai-influencer" },
+        { label: "WhatsApp Marketing", href: "/services/whatsapp-marketing" },
     ],
     Resources: [
         { label: "Blog", href: "/blog" },
