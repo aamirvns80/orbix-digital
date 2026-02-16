@@ -125,7 +125,7 @@ export default function AboutPage() {
                         stats={[
                             { value: 500, suffix: "+", label: "Businesses Served" },
                             { value: 50000, suffix: "+", label: "Campaigns Managed" },
-                            { value: 15, suffix: "M+", prefix: "$", label: "Client Revenue Generated" },
+                            { value: 15, suffix: "Cr+", prefix: "₹", label: "Client Revenue Generated" },
                             { value: 24, suffix: "/7", label: "Platform Uptime" },
                         ]}
                     />

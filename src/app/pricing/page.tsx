@@ -100,7 +100,7 @@ const FAQS = [
     },
     {
         question: "What payment methods do you accept?",
-        answer: "We accept all major credit cards (Visa, Mastercard, Amex), PayPal, and bank transfers for annual Enterprise plans.",
+        answer: "We accept UPI, all major credit/debit cards (Visa, Mastercard, RuPay), Net Banking, Razorpay, Paytm, and bank transfers for Enterprise plans. All prices are in INR (₹).",
     },
     {
         question: "Is there a discount for annual billing?",

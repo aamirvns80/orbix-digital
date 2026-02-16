@@ -161,7 +161,7 @@ export default function HomePage() {
             </ScrollReveal>
             <ScrollReveal delay={500}>
               <div className="flex flex-col items-center gap-3 pt-2">
-                <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Trusted by growing businesses</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Trusted by 500+ Indian Businesses</p>
                 <div className="flex items-center gap-6 flex-wrap justify-center opacity-60 hover:opacity-100 transition-opacity duration-500">
                   {CLIENT_LOGOS.map((logo) => (
                     <Image

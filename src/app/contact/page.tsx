@@ -265,15 +265,15 @@ function ContactForm() {
                                 <div className="pt-6 border-t border-white/10 space-y-3">
                                     <div className="flex items-center gap-3 text-sm text-white/60">
                                         <Mail className="h-4 w-4" />
-                                        <span>hello@OrbixDigital.com</span>
+                                        <span>hello@orbixdigital.com</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-white/60">
                                         <Phone className="h-4 w-4" />
-                                        <span>+1 (555) 987-6543</span>
+                                        <span>+91 98765 43210</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-white/60">
                                         <MapPin className="h-4 w-4" />
-                                        <span>San Francisco, CA</span>
+                                        <span>Mumbai, Maharashtra, India</span>
                                     </div>
                                 </div>
                             </ScrollReveal>

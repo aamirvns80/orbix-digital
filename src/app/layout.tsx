@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Toaster } from "@/components/ui/toast";
 import { TRPCProvider } from "@/lib/trpc/client";
 import { PageTransition } from "@/components/ui/page-transition";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://OrbixDigital.com";
 
@@ -74,25 +75,27 @@ const jsonLd = {
   "@type": "Organization",
   name: "OrbixDigital",
   description:
-    "Full-service digital marketing platform trusted by 500+ businesses worldwide.",
+    "Full-service digital marketing agency trusted by 500+ Indian businesses.",
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   sameAs: [
-    "https://twitter.com/OrbixDigital",
-    "https://linkedin.com/company/OrbixDigital",
+    "https://twitter.com/orbixdigital",
+    "https://linkedin.com/company/orbixdigital",
+    "https://instagram.com/orbixdigital",
+    "https://youtube.com/@orbixdigital",
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+1-555-987-6543",
+    telephone: "+91-98765-43210",
     contactType: "sales",
-    email: "hello@OrbixDigital.com",
-    availableLanguage: "English",
+    email: "hello@orbixdigital.com",
+    availableLanguage: ["English", "Hindi"],
   },
   offers: {
     "@type": "AggregateOffer",
-    priceCurrency: "USD",
-    lowPrice: "49",
-    highPrice: "149",
+    priceCurrency: "INR",
+    lowPrice: "4999",
+    highPrice: "14999",
     offerCount: "3",
   },
 };
@@ -126,6 +129,7 @@ export default function RootLayout({
             <PageTransition>
               {children}
             </PageTransition>
+            <WhatsAppButton />
             <Toaster />
           </TRPCProvider>
         </ThemeProvider>
