@@ -1,0 +1,73 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+   <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+   <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+  </linearGradient>
+  <linearGradient id="accent2" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" style="stop-color:#2dd4bf;stop-opacity:0.6" />
+   <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.2" />
+  </linearGradient>
+ </defs>
+ <rect width="100%" height="100%" fill="url(#grad)" />
+
+ <!-- Central Brain / AI Hub -->
+ <circle cx="400" cy="200" r="60" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.8"/>
+ <circle cx="400" cy="200" r="45" fill="rgba(16, 185, 129, 0.1)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5"/>
+ <!-- Bot face -->
+ <rect x="382" y="185" width="36" height="30" rx="6" fill="none" stroke="url(#accent)" stroke-width="2"/>
+ <circle cx="392" cy="198" r="3" fill="#34d399"/>
+ <circle cx="408" cy="198" r="3" fill="#34d399"/>
+ <line x1="390" y1="207" x2="410" y2="207" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+ <!-- Antenna -->
+ <line x1="400" y1="185" x2="400" y2="172" stroke="#34d399" stroke-width="2"/>
+ <circle cx="400" cy="169" r="3" fill="#34d399"/>
+
+ <!-- Node 1: Phone (top-left) -->
+ <line x1="355" y1="170" x2="240" y2="110" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+ <circle cx="220" cy="100" r="30" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.4)" stroke-width="1.5"/>
+ <rect x="210" y="84" width="20" height="32" rx="4" fill="none" stroke="#34d399" stroke-width="1.5"/>
+ <line x1="215" y1="108" x2="225" y2="108" stroke="#34d399" stroke-width="1"/>
+
+ <!-- Node 2: Headset (top-right) -->
+ <line x1="445" y1="170" x2="560" y2="110" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+ <circle cx="580" cy="100" r="30" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.4)" stroke-width="1.5"/>
+ <path d="M568 95 Q568 80 580 80 Q592 80 592 95" fill="none" stroke="#34d399" stroke-width="2"/>
+ <rect x="565" y="95" width="8" height="14" rx="3" fill="#34d399" opacity="0.6"/>
+ <rect x="587" y="95" width="8" height="14" rx="3" fill="#34d399" opacity="0.6"/>
+
+ <!-- Node 3: WhatsApp (bottom-left) -->
+ <line x1="355" y1="230" x2="240" y2="290" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+ <circle cx="220" cy="300" r="30" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.4)" stroke-width="1.5"/>
+ <circle cx="220" cy="300" r="14" fill="none" stroke="#34d399" stroke-width="1.5"/>
+ <path d="M214 306 Q210 314 212 314 L216 310 Q218 312 222 312 Q228 312 228 306 Q228 300 222 298 Q216 296 214 300" fill="none" stroke="#34d399" stroke-width="1"/>
+
+ <!-- Node 4: Chatbot (bottom-right) -->
+ <line x1="445" y1="230" x2="560" y2="290" stroke="rgba(16,185,129,0.3)" stroke-width="1.5" stroke-dasharray="4,4"/>
+ <circle cx="580" cy="300" r="30" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.4)" stroke-width="1.5"/>
+ <rect x="568" y="288" width="24" height="18" rx="4" fill="none" stroke="#34d399" stroke-width="1.5"/>
+ <circle cx="575" cy="297" r="2" fill="#34d399"/>
+ <circle cx="585" cy="297" r="2" fill="#34d399"/>
+ <path d="M568 306 L575 312" fill="none" stroke="#34d399" stroke-width="1.5"/>
+
+ <!-- Pulsing rings -->
+ <circle cx="400" cy="200" r="80" fill="none" stroke="rgba(16,185,129,0.12)" stroke-width="1"/>
+ <circle cx="400" cy="200" r="100" fill="none" stroke="rgba(16,185,129,0.06)" stroke-width="1"/>
+ <circle cx="400" cy="200" r="120" fill="none" stroke="rgba(16,185,129,0.03)" stroke-width="1"/>
+
+ <!-- Data particles -->
+ <circle cx="310" cy="150" r="2" fill="#34d399" opacity="0.5"/>
+ <circle cx="490" cy="150" r="2" fill="#34d399" opacity="0.5"/>
+ <circle cx="310" cy="260" r="2" fill="#34d399" opacity="0.4"/>
+ <circle cx="490" cy="260" r="2" fill="#34d399" opacity="0.4"/>
+ <circle cx="340" cy="120" r="1.5" fill="#2dd4bf" opacity="0.3"/>
+ <circle cx="460" cy="120" r="1.5" fill="#2dd4bf" opacity="0.3"/>
+ <circle cx="340" cy="280" r="1.5" fill="#2dd4bf" opacity="0.3"/>
+ <circle cx="460" cy="280" r="1.5" fill="#2dd4bf" opacity="0.3"/>
+
+ <text x="50%" y="90%" font-family="sans-serif" font-size="14" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="2">AI AUTOMATION</text>
+</svg>

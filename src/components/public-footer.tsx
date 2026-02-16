@@ -18,7 +18,7 @@ const FOOTER_LINKS = {
     ],
     "More Services": [
         { label: "Video Production", href: "/services#video" },
-        { label: "Analytics & Reporting", href: "/services#analytics" },
+        { label: "AI Automation", href: "/services/ai-automation" },
         { label: "Influencer Marketing", href: "/services#influencer" },
         { label: "Celebrity Marketing", href: "/services#celebrity" },
         { label: "AI Influencer", href: "/services#ai" },
