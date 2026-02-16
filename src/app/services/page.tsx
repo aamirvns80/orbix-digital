@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
 const SERVICES = [
     {
+        slug: "seo-content-marketing",
         icon: Search,
         title: "SEO & Content Marketing",
         description: "Dominate search rankings with data-driven SEO strategies and compelling content that converts visitors into leads.",
@@ -42,6 +43,7 @@ const SERVICES = [
         price: "Starts at ₹12,000/mo",
     },
     {
+        slug: "paid-advertising",
         icon: BarChart3,
         title: "Paid Advertising (PPC)",
         description: "Maximize ROI with targeted ad campaigns across Google, Meta, LinkedIn, and TikTok.",
@@ -57,6 +59,7 @@ const SERVICES = [
         price: "Starts at ₹8,000/mo",
     },
     {
+        slug: "social-media-management",
         icon: Users,
         title: "Social Media Management",
         description: "Build authentic connections with your audience through strategic social media presence and community management.",
@@ -72,6 +75,7 @@ const SERVICES = [
         price: "Starts at ₹15,000/mo",
     },
     {
+        slug: "web-design-development",
         icon: Globe,
         title: "Web Design & Development",
         description: "Stunning, conversion-optimized websites that deliver exceptional user experiences and drive business results.",
@@ -87,6 +91,7 @@ const SERVICES = [
         price: "Starts at ₹20,000",
     },
     {
+        slug: "email-marketing",
         icon: Mail,
         title: "Email Marketing",
         description: "Nurture leads and retain customers with personalized email campaigns that drive engagement and revenue.",
@@ -102,6 +107,7 @@ const SERVICES = [
         price: "Starts at ₹5,000/mo",
     },
     {
+        slug: "brand-strategy",
         icon: Sparkles,
         title: "Brand Strategy",
         description: "Define your brand identity and position yourself as a market leader with a cohesive brand strategy.",
@@ -117,6 +123,7 @@ const SERVICES = [
         price: "Starts at ₹15,000",
     },
     {
+        slug: "video-production",
         icon: Video,
         title: "Video Production",
         description: "Engage your audience with high-quality video content for social media, ads, and brand storytelling.",
@@ -132,6 +139,7 @@ const SERVICES = [
         price: "Starts at ₹10,000/video",
     },
     {
+        slug: "analytics-reporting",
         icon: PieChart,
         title: "Analytics & Reporting",
         description: "Make data-driven decisions with comprehensive analytics, custom dashboards, and actionable insights.",
@@ -147,6 +155,7 @@ const SERVICES = [
         price: "Starts at ₹5,000/mo",
     },
     {
+        slug: "influencer-marketing",
         icon: Megaphone,
         title: "Influencer Marketing",
         description: "Amplify your brand reach and credibility by partnering with influential voices in your niche.",
@@ -162,6 +171,7 @@ const SERVICES = [
         price: "Starts at ₹20,000/campaign",
     },
     {
+        slug: "celebrity-marketing",
         icon: Star,
         title: "Celebrity Marketing",
         description: "Elevate your brand status and visibility through strategic high-profile celebrity endorsements and partnerships.",
@@ -177,6 +187,7 @@ const SERVICES = [
         price: "Starts at ₹2,00,000/campaign",
     },
     {
+        slug: "ai-influencer",
         icon: Bot,
         title: "AI Influencer",
         description: "Leverage cutting-edge AI to create hyper-realistic virtual influencers and automated ad content at scale — no human talent required.",
@@ -194,6 +205,7 @@ const SERVICES = [
         price: "Starts at ₹10,000/mo",
     },
     {
+        slug: "whatsapp-marketing",
         icon: MessageCircle,
         title: "WhatsApp Marketing",
         description: "Unlock the power of WhatsApp to engage customers directly, automate conversations, and drive conversions through the world's most popular messaging platform.",
@@ -252,6 +264,7 @@ export default function ServicesPage() {
                                     description={service.description}
                                     features={service.features}
                                     price={service.price}
+                                    href={`/services/${service.slug}`}
                                     color={service.color}
                                     bgColor={service.bgColor}
                                     image={service.image}

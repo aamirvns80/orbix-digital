@@ -59,7 +59,7 @@ export function ServiceCard({
                         href={href}
                         className={`inline-flex items-center gap-2 text-sm font-semibold ${color} hover:gap-3 transition-all`}
                     >
-                        Get started <ArrowRight className="h-4 w-4" />
+                        View Details <ArrowRight className="h-4 w-4" />
                     </Link>
                     {price && (
                         <p className="text-sm text-muted-foreground">

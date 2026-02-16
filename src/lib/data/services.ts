@@ -1,0 +1,985 @@
+import {
+    Search,
+    Target,
+    Share2,
+    Globe,
+    Mail,
+    Palette,
+    Video,
+    BarChart3,
+    Users,
+    Star,
+    Bot,
+    MessageCircle,
+    type LucideIcon,
+    Image,
+    Megaphone,
+    PenTool,
+    Link,
+    MapPin,
+    Smartphone,
+    FileText,
+    ShoppingCart,
+    Gauge,
+    Wrench,
+    Sparkles,
+    Mic,
+    Film,
+    Scissors,
+    Building,
+    TrendingUp,
+    LayoutGrid,
+    Zap,
+    ThumbsUp,
+    Heart,
+    Camera,
+    Trophy,
+    Handshake,
+    Newspaper,
+    Award,
+    Blocks,
+    Send,
+    BotMessageSquare,
+    Radio,
+    MousePointerClick,
+    Activity,
+} from "lucide-react";
+
+// ─── Types ───────────────────────────────────────────────────────────
+export interface SubService {
+    name: string;
+    slug: string;
+    description: string;
+    deliverables: string[];
+    price: string;
+    icon: LucideIcon;
+}
+
+export interface ServiceDetail {
+    slug: string;
+    title: string;
+    tagline: string;
+    description: string;
+    icon: LucideIcon;
+    color: string;
+    bgColor: string;
+    gradient: string;
+    image: string;
+    startingPrice: string;
+    subServices: SubService[];
+    process: { step: string; title: string; description: string }[];
+    faqs: { question: string; answer: string }[];
+}
+
+// ─── Service Data ────────────────────────────────────────────────────
+export const SERVICE_DETAILS: ServiceDetail[] = [
+    // ── 1. SEO & Content Marketing ──
+    {
+        slug: "seo-content-marketing",
+        title: "SEO & Content Marketing",
+        tagline: "Dominate search rankings and drive organic growth",
+        description:
+            "Our data-driven SEO strategies and compelling content help you rank higher, attract qualified traffic, and convert visitors into customers.",
+        icon: Search,
+        color: "text-blue-500",
+        bgColor: "bg-blue-500/10",
+        gradient: "from-blue-500 to-cyan-400",
+        image: "/images/services/seo-marketing.svg",
+        startingPrice: "₹12,000/mo",
+        subServices: [
+            {
+                name: "Technical SEO Audit",
+                slug: "technical-seo-audit",
+                description: "Comprehensive site health check covering speed, crawlability, indexing, and Core Web Vitals to fix hidden issues killing your rankings.",
+                deliverables: ["Full site crawl report", "Core Web Vitals analysis", "Fix priority roadmap", "Schema markup review", "Competitor gap analysis"],
+                price: "₹8,000/audit",
+                icon: Gauge,
+            },
+            {
+                name: "On-Page Optimization",
+                slug: "on-page-optimization",
+                description: "Optimize every page element — titles, meta descriptions, headings, internal links — to maximize search visibility.",
+                deliverables: ["Title & meta tag optimization", "Header structure fixes", "Internal linking strategy", "Image alt-text optimization", "URL structure improvements"],
+                price: "₹10,000/mo",
+                icon: FileText,
+            },
+            {
+                name: "Content Writing & Strategy",
+                slug: "content-writing",
+                description: "SEO-optimized blog posts, landing pages, and pillar content that attracts traffic and establishes thought leadership.",
+                deliverables: ["4 blog posts/month", "Content calendar", "Keyword-targeted articles", "Editorial review", "CTA integration"],
+                price: "₹15,000/mo",
+                icon: PenTool,
+            },
+            {
+                name: "Link Building & Outreach",
+                slug: "link-building",
+                description: "Earn high-authority backlinks through strategic outreach, guest posting, and digital PR to boost domain authority.",
+                deliverables: ["10+ quality backlinks/mo", "Guest post placements", "Broken link outreach", "Digital PR campaigns", "Monthly link report"],
+                price: "₹12,000/mo",
+                icon: Link,
+            },
+            {
+                name: "Local SEO",
+                slug: "local-seo",
+                description: "Dominate local search results with Google Business Profile optimization, local citations, and review management.",
+                deliverables: ["Google Business setup", "Local citation building", "Review management strategy", "Local keyword targeting", "Map pack optimization"],
+                price: "₹8,000/mo",
+                icon: MapPin,
+            },
+            {
+                name: "Keyword Research & Tracking",
+                slug: "keyword-research",
+                description: "Deep keyword research to find high-intent, low-competition opportunities, with ongoing rank tracking and reporting.",
+                deliverables: ["100+ keyword opportunities", "Competitor keyword gaps", "Search intent mapping", "Monthly rank reports", "Quarterly strategy review"],
+                price: "₹5,000/mo",
+                icon: Search,
+            },
+        ],
+        process: [
+            { step: "01", title: "Audit & Research", description: "We analyze your site, competitors, and target keywords to build a winning SEO roadmap." },
+            { step: "02", title: "Optimize & Create", description: "Fix technical issues, optimize pages, and produce high-quality content that ranks." },
+            { step: "03", title: "Monitor & Scale", description: "Track rankings, measure ROI, and continuously scale what's working." },
+        ],
+        faqs: [
+            { question: "How long before I see SEO results?", answer: "Most clients see meaningful traffic improvements within 3–6 months. SEO is a long-term strategy that compounds over time." },
+            { question: "Do you guarantee #1 rankings?", answer: "No ethical SEO agency can guarantee specific rankings. We guarantee proven strategies, transparent reporting, and consistent effort to improve your visibility." },
+            { question: "Can I choose individual SEO services?", answer: "Absolutely! You can pick any sub-service individually or bundle them for a discounted monthly package." },
+        ],
+    },
+
+    // ── 2. Paid Advertising (PPC) ──
+    {
+        slug: "paid-advertising",
+        title: "Paid Advertising (PPC)",
+        tagline: "Get instant leads with precision-targeted ad campaigns",
+        description:
+            "Maximize your ad spend with data-driven PPC campaigns across Google, Meta, YouTube, and LinkedIn that deliver measurable ROI.",
+        icon: Target,
+        color: "text-orange-500",
+        bgColor: "bg-orange-500/10",
+        gradient: "from-orange-500 to-amber-400",
+        image: "/images/services/ppc.svg",
+        startingPrice: "₹8,000/mo",
+        subServices: [
+            {
+                name: "Google Ads Management",
+                slug: "google-ads",
+                description: "Search, Display, and Shopping campaigns optimized for maximum conversions at the lowest cost per acquisition.",
+                deliverables: ["Campaign setup & structure", "Ad copywriting", "Bid strategy optimization", "Negative keyword management", "Monthly performance report"],
+                price: "₹8,000/mo",
+                icon: Search,
+            },
+            {
+                name: "Meta Ads (Facebook & Instagram)",
+                slug: "meta-ads",
+                description: "Reach your ideal audience on Facebook and Instagram with thumb-stopping creatives and laser-targeted campaigns.",
+                deliverables: ["Audience research & targeting", "Ad creative design", "A/B testing", "Retargeting campaigns", "Weekly optimization"],
+                price: "₹8,000/mo",
+                icon: Share2,
+            },
+            {
+                name: "YouTube Ads",
+                slug: "youtube-ads",
+                description: "Video ad campaigns that capture attention, build brand awareness, and drive conversions on the world's largest video platform.",
+                deliverables: ["Video ad strategy", "Targeting setup", "TrueView & Bumper ads", "Campaign optimization", "View & conversion tracking"],
+                price: "₹10,000/mo",
+                icon: Video,
+            },
+            {
+                name: "LinkedIn Ads",
+                slug: "linkedin-ads",
+                description: "B2B-focused ad campaigns targeting decision-makers by job title, company, industry, and seniority on LinkedIn.",
+                deliverables: ["Audience segmentation", "Sponsored content ads", "InMail campaigns", "Lead gen forms", "Monthly analytics"],
+                price: "₹12,000/mo",
+                icon: Users,
+            },
+            {
+                name: "Remarketing Campaigns",
+                slug: "remarketing",
+                description: "Re-engage visitors who didn't convert with strategic retargeting across Google Display, Meta, and YouTube.",
+                deliverables: ["Pixel setup & tracking", "Custom audience creation", "Dynamic remarketing ads", "Sequential messaging", "Conversion tracking"],
+                price: "₹6,000/mo",
+                icon: TrendingUp,
+            },
+            {
+                name: "Landing Page Design",
+                slug: "landing-page-design",
+                description: "High-converting landing pages designed specifically for your ad campaigns to maximize quality score and conversions.",
+                deliverables: ["Custom landing page design", "A/B test variants", "Mobile optimization", "Form integration", "Speed optimization"],
+                price: "₹10,000/page",
+                icon: LayoutGrid,
+            },
+        ],
+        process: [
+            { step: "01", title: "Strategy & Setup", description: "Define goals, research audiences, and build campaign structure for maximum impact." },
+            { step: "02", title: "Launch & Optimize", description: "Go live with campaigns and continuously optimize bids, targeting, and creatives." },
+            { step: "03", title: "Scale & Report", description: "Double down on winners, cut losers, and deliver transparent ROI reports." },
+        ],
+        faqs: [
+            { question: "What's the minimum ad budget needed?", answer: "We recommend a minimum of ₹15,000/month in ad spend for meaningful results, plus our management fee." },
+            { question: "How quickly can I get leads from PPC?", answer: "PPC delivers near-instant results. Most campaigns start generating leads within the first week of launch." },
+            { question: "Do you manage the ad spend or do I pay directly?", answer: "You pay ad platforms directly. Our fee covers strategy, setup, optimization, and reporting." },
+        ],
+    },
+
+    // ── 3. Social Media Management ──
+    {
+        slug: "social-media-management",
+        title: "Social Media Management",
+        tagline: "Build a loyal community and dominate social platforms",
+        description:
+            "Strategic social media management that grows your brand presence, engages your audience, and drives real business results across all platforms.",
+        icon: Share2,
+        color: "text-pink-500",
+        bgColor: "bg-pink-500/10",
+        gradient: "from-pink-500 to-rose-400",
+        image: "/images/services/social-media.svg",
+        startingPrice: "₹15,000/mo",
+        subServices: [
+            {
+                name: "Content Calendar & Strategy",
+                slug: "content-calendar",
+                description: "A comprehensive monthly content plan with themes, post types, and platform-specific strategies.",
+                deliverables: ["30-day content calendar", "Platform strategy", "Content themes", "Hashtag research", "Posting schedule"],
+                price: "₹8,000/mo",
+                icon: LayoutGrid,
+            },
+            {
+                name: "Reels & Shorts Creation",
+                slug: "reels-shorts",
+                description: "Trending, scroll-stopping short-form video content for Instagram Reels, YouTube Shorts, and TikTok.",
+                deliverables: ["8–12 reels/month", "Script writing", "Professional editing", "Trending audio integration", "Captions & hashtags"],
+                price: "₹12,000/mo",
+                icon: Film,
+            },
+            {
+                name: "Community Management",
+                slug: "community-management",
+                description: "Active comment replies, DM handling, and community engagement to build authentic relationships with your audience.",
+                deliverables: ["Daily comment monitoring", "DM response management", "Community engagement", "Crisis management", "Weekly engagement report"],
+                price: "₹10,000/mo",
+                icon: Heart,
+            },
+            {
+                name: "Social Listening",
+                slug: "social-listening",
+                description: "Monitor brand mentions, competitor activity, and industry trends to stay ahead and protect your reputation.",
+                deliverables: ["Brand mention tracking", "Competitor monitoring", "Trend alerts", "Sentiment analysis", "Monthly insights report"],
+                price: "₹7,000/mo",
+                icon: Radio,
+            },
+            {
+                name: "Paid Social Boosting",
+                slug: "paid-boosting",
+                description: "Strategic post boosting and micro-campaigns to amplify your best organic content and reach new audiences.",
+                deliverables: ["Post selection strategy", "Audience targeting", "Budget optimization", "A/B creative testing", "Performance reporting"],
+                price: "₹5,000/mo + ad spend",
+                icon: Megaphone,
+            },
+            {
+                name: "Monthly Reporting & Analytics",
+                slug: "social-reporting",
+                description: "Detailed monthly reports with growth metrics, engagement analysis, and data-driven strategy recommendations.",
+                deliverables: ["Follower growth analysis", "Engagement rate tracking", "Top-performing content", "Competitor benchmarking", "Next month recommendations"],
+                price: "₹3,000/mo",
+                icon: BarChart3,
+            },
+        ],
+        process: [
+            { step: "01", title: "Brand Audit", description: "Analyze your current social presence, audience, and competitors to define the strategy." },
+            { step: "02", title: "Create & Publish", description: "Produce platform-native content and execute the content calendar consistently." },
+            { step: "03", title: "Engage & Grow", description: "Actively engage your community, analyze performance, and scale what works." },
+        ],
+        faqs: [
+            { question: "Which platforms do you manage?", answer: "Instagram, Facebook, LinkedIn, X (Twitter), YouTube, and Pinterest. We recommend focusing on 2–3 platforms for maximum impact." },
+            { question: "Do you create all the content?", answer: "Yes! Our team handles strategy, copywriting, graphic design, and video editing. We just need your brand assets and a kickoff call." },
+            { question: "Can I approve content before it goes live?", answer: "Absolutely. We share a content calendar for your review and approval before anything gets published." },
+        ],
+    },
+
+    // ── 4. Web Design & Development ──
+    {
+        slug: "web-design-development",
+        title: "Web Design & Development",
+        tagline: "Stunning, high-performance websites that convert",
+        description:
+            "From landing pages to full e-commerce stores, we design and build lightning-fast websites that look amazing and drive conversions.",
+        icon: Globe,
+        color: "text-cyan-500",
+        bgColor: "bg-cyan-500/10",
+        gradient: "from-cyan-500 to-blue-400",
+        image: "/images/services/web-dev.svg",
+        startingPrice: "₹20,000",
+        subServices: [
+            {
+                name: "Landing Page Design",
+                slug: "landing-page",
+                description: "Single-page, conversion-optimized landing pages for campaigns, product launches, or lead generation.",
+                deliverables: ["Custom design", "Mobile responsive", "Contact form integration", "SEO basics", "Speed optimized"],
+                price: "₹10,000/page",
+                icon: LayoutGrid,
+            },
+            {
+                name: "Business Website (5–10 Pages)",
+                slug: "business-website",
+                description: "Professional multi-page website with all essential sections — Home, About, Services, Blog, Contact.",
+                deliverables: ["5–10 custom pages", "CMS integration", "SEO optimization", "Mobile responsive", "Contact & lead forms"],
+                price: "₹25,000",
+                icon: Globe,
+            },
+            {
+                name: "E-Commerce Store",
+                slug: "ecommerce-store",
+                description: "Full-featured online store with product catalog, cart, checkout, and payment gateway integration.",
+                deliverables: ["Product catalog setup", "Payment gateway (Razorpay/UPI)", "Order management", "Inventory tracking", "Mobile-first design"],
+                price: "₹40,000",
+                icon: ShoppingCart,
+            },
+            {
+                name: "Website Redesign",
+                slug: "website-redesign",
+                description: "Modernize your existing website with a fresh design, better UX, and improved performance.",
+                deliverables: ["UX audit & wireframes", "Modern redesign", "Content migration", "SEO preservation", "Performance upgrade"],
+                price: "₹20,000",
+                icon: Sparkles,
+            },
+            {
+                name: "Speed & Performance Optimization",
+                slug: "speed-optimization",
+                description: "Make your website blazing fast — fix slow loading, optimize images, and improve Core Web Vitals.",
+                deliverables: ["Speed audit", "Image compression", "Code minification", "CDN setup", "Core Web Vitals fix"],
+                price: "₹8,000",
+                icon: Zap,
+            },
+            {
+                name: "Website Maintenance",
+                slug: "website-maintenance",
+                description: "Ongoing maintenance, security updates, backups, and minor changes to keep your site running perfectly.",
+                deliverables: ["Monthly backups", "Security monitoring", "Plugin/dependency updates", "Minor content changes", "Uptime monitoring"],
+                price: "₹5,000/mo",
+                icon: Wrench,
+            },
+        ],
+        process: [
+            { step: "01", title: "Discovery & Wireframing", description: "Understand your goals, map out the site structure, and create wireframes for approval." },
+            { step: "02", title: "Design & Development", description: "Build pixel-perfect designs, develop the site, and integrate all features." },
+            { step: "03", title: "Test & Launch", description: "Thorough QA testing, SEO setup, and smooth launch with post-launch support." },
+        ],
+        faqs: [
+            { question: "How long does a website take to build?", answer: "Landing pages take 5–7 days. Full websites take 2–4 weeks depending on complexity. E-commerce stores take 3–6 weeks." },
+            { question: "Do you provide hosting?", answer: "We can recommend and set up hosting (Hostinger, Vercel, AWS) or work with your existing hosting provider." },
+            { question: "Will I be able to edit the website myself?", answer: "Yes! We build with user-friendly CMS options so you can easily update content, images, and blog posts." },
+        ],
+    },
+
+    // ── 5. Email Marketing ──
+    {
+        slug: "email-marketing",
+        title: "Email Marketing",
+        tagline: "Nurture leads and drive sales on autopilot",
+        description:
+            "Strategic email campaigns and automation sequences that nurture leads, retain customers, and generate consistent revenue.",
+        icon: Mail,
+        color: "text-yellow-500",
+        bgColor: "bg-yellow-500/10",
+        gradient: "from-yellow-500 to-orange-400",
+        image: "/images/services/email.svg",
+        startingPrice: "₹5,000/mo",
+        subServices: [
+            {
+                name: "Welcome & Onboarding Sequences",
+                slug: "welcome-sequences",
+                description: "Automated email sequences that welcome new subscribers and guide them toward their first purchase.",
+                deliverables: ["5-email welcome series", "Copywriting", "Template design", "Automation setup", "Performance tracking"],
+                price: "₹5,000/setup",
+                icon: Send,
+            },
+            {
+                name: "Newsletter Campaigns",
+                slug: "newsletter-campaigns",
+                description: "Regular, value-packed newsletters that keep your audience engaged and drive traffic back to your site.",
+                deliverables: ["4 newsletters/month", "Custom template design", "Copywriting", "Segmentation", "A/B subject line testing"],
+                price: "₹6,000/mo",
+                icon: Mail,
+            },
+            {
+                name: "Drip Automation",
+                slug: "drip-automation",
+                description: "Set-and-forget email sequences triggered by user behavior — abandoned carts, inactivity, and more.",
+                deliverables: ["Behavioral triggers setup", "Multi-step sequences", "Dynamic content", "Conversion tracking", "Monthly optimization"],
+                price: "₹8,000/setup",
+                icon: Zap,
+            },
+            {
+                name: "Lead Nurturing Sequences",
+                slug: "lead-nurturing",
+                description: "Move cold leads through your sales funnel with strategically timed, personalized email sequences.",
+                deliverables: ["Funnel mapping", "7-email nurture sequence", "Personalization tokens", "Scoring integration", "Re-engagement campaigns"],
+                price: "₹7,000/setup",
+                icon: TrendingUp,
+            },
+            {
+                name: "A/B Testing & Optimization",
+                slug: "email-ab-testing",
+                description: "Data-driven testing of subject lines, send times, content, and CTAs to maximize open and click rates.",
+                deliverables: ["Subject line tests", "Send time optimization", "CTA testing", "Content variations", "Monthly insights report"],
+                price: "₹3,000/mo",
+                icon: BarChart3,
+            },
+            {
+                name: "Email Template Design",
+                slug: "email-template-design",
+                description: "Beautiful, branded email templates that look great on every device and drive action.",
+                deliverables: ["3 custom templates", "Mobile responsive", "Brand-consistent design", "Dark mode compatible", "Reusable components"],
+                price: "₹5,000/set",
+                icon: Palette,
+            },
+        ],
+        process: [
+            { step: "01", title: "Strategy & Segmentation", description: "Map your customer journey, segment your list, and plan the email strategy." },
+            { step: "02", title: "Create & Automate", description: "Design templates, write compelling copy, and set up automation workflows." },
+            { step: "03", title: "Test & Optimize", description: "A/B test, monitor metrics, and continuously improve open rates and conversions." },
+        ],
+        faqs: [
+            { question: "Which email platform do you use?", answer: "We work with Mailchimp, ConvertKit, Brevo (Sendinblue), and any platform you prefer. We'll recommend the best fit for your needs." },
+            { question: "How many emails should I send per month?", answer: "We typically recommend 4–8 emails/month depending on your audience. Quality always beats quantity." },
+            { question: "Can you manage my existing email list?", answer: "Yes! We'll audit your list, clean inactive subscribers, segment it properly, and start sending targeted campaigns." },
+        ],
+    },
+
+    // ── 6. Brand Strategy ──
+    {
+        slug: "brand-strategy",
+        title: "Brand Strategy",
+        tagline: "Build an unforgettable brand identity",
+        description:
+            "From logo design to complete brand systems, we help you create a memorable identity that resonates with your audience and sets you apart.",
+        icon: Palette,
+        color: "text-violet-500",
+        bgColor: "bg-violet-500/10",
+        gradient: "from-violet-500 to-purple-400",
+        image: "/images/services/brand.svg",
+        startingPrice: "₹15,000",
+        subServices: [
+            {
+                name: "Brand Identity Design",
+                slug: "brand-identity",
+                description: "Complete visual identity including logo, color palette, typography, and brand elements that make your brand instantly recognizable.",
+                deliverables: ["Logo design (3 concepts)", "Color palette", "Typography system", "Icon set", "Brand mark variations"],
+                price: "₹15,000",
+                icon: Sparkles,
+            },
+            {
+                name: "Logo & Visual System",
+                slug: "logo-design",
+                description: "Professional logo design with a complete visual system for consistent brand representation across all touchpoints.",
+                deliverables: ["Primary logo", "Secondary mark", "Favicon", "Social media avatar", "File formats (SVG, PNG, PDF)"],
+                price: "₹10,000",
+                icon: Image,
+            },
+            {
+                name: "Brand Guidelines Document",
+                slug: "brand-guidelines",
+                description: "A comprehensive brand book that ensures consistency across all teams, vendors, and marketing materials.",
+                deliverables: ["20+ page brand book", "Usage rules", "Do's & Don'ts", "Digital & print specs", "Template examples"],
+                price: "₹12,000",
+                icon: FileText,
+            },
+            {
+                name: "Messaging Framework",
+                slug: "messaging-framework",
+                description: "Define your brand voice, tone, taglines, and key messages that connect emotionally with your target audience.",
+                deliverables: ["Brand voice guide", "Tagline options", "Value propositions", "Elevator pitch", "Audience personas"],
+                price: "₹8,000",
+                icon: Megaphone,
+            },
+            {
+                name: "Competitive Analysis",
+                slug: "competitive-analysis",
+                description: "Deep analysis of your competitors' branding, positioning, and messaging to find your unique differentiation.",
+                deliverables: ["5 competitor deep-dives", "Positioning map", "SWOT analysis", "Differentiation strategy", "Opportunity report"],
+                price: "₹6,000",
+                icon: TrendingUp,
+            },
+            {
+                name: "Brand Launch Campaign",
+                slug: "brand-launch",
+                description: "Strategic launch campaign to introduce your new brand to the world with maximum impact and buzz.",
+                deliverables: ["Launch strategy", "Social media campaign", "PR outreach", "Launch event planning", "Performance tracking"],
+                price: "₹20,000",
+                icon: Megaphone,
+            },
+        ],
+        process: [
+            { step: "01", title: "Discovery Workshop", description: "Deep-dive into your business, audience, competitors, and aspirations to define the brand direction." },
+            { step: "02", title: "Design & Refine", description: "Create brand concepts, gather feedback, and refine until your identity is perfect." },
+            { step: "03", title: "Deliver & Launch", description: "Hand over complete brand assets and guidelines, then launch with impact." },
+        ],
+        faqs: [
+            { question: "How long does a full rebrand take?", answer: "A complete brand identity project typically takes 3–5 weeks from kickoff to final delivery." },
+            { question: "How many revision rounds are included?", answer: "All brand projects include 3 rounds of revisions to ensure you're 100% happy with the result." },
+            { question: "Can you just design a logo?", answer: "Yes! Our Logo & Visual System sub-service is available as a standalone offering starting at ₹10,000." },
+        ],
+    },
+
+    // ── 7. Video Production ──
+    {
+        slug: "video-production",
+        title: "Video Production",
+        tagline: "Engage your audience with professional video content",
+        description:
+            "From product demos to brand films, we create high-quality video content that captures attention and drives engagement across every platform.",
+        icon: Video,
+        color: "text-red-500",
+        bgColor: "bg-red-500/10",
+        gradient: "from-red-500 to-pink-400",
+        image: "/images/services/video.svg",
+        startingPrice: "₹10,000/video",
+        subServices: [
+            {
+                name: "Product Videos",
+                slug: "product-videos",
+                description: "Showcase your product in action with polished videos that highlight features, benefits, and use cases.",
+                deliverables: ["60–90 sec video", "Script writing", "Professional editing", "Background music", "Platform-optimized versions"],
+                price: "₹10,000/video",
+                icon: Camera,
+            },
+            {
+                name: "Explainer Videos",
+                slug: "explainer-videos",
+                description: "Animated or live-action explainer videos that simplify complex concepts and drive understanding.",
+                deliverables: ["2-min explainer video", "Script & storyboard", "Animation/motion graphics", "Voiceover", "Revisions included"],
+                price: "₹15,000/video",
+                icon: Film,
+            },
+            {
+                name: "Testimonial Videos",
+                slug: "testimonial-videos",
+                description: "Authentic customer testimonial videos that build trust and influence purchase decisions.",
+                deliverables: ["Client interview coordination", "Professional filming", "Editing & color grading", "Subtitle overlay", "Social media cuts"],
+                price: "₹12,000/video",
+                icon: ThumbsUp,
+            },
+            {
+                name: "Social Media Reels",
+                slug: "social-reels",
+                description: "Trending, attention-grabbing reels and short-form videos optimized for Instagram, YouTube Shorts, and more.",
+                deliverables: ["5 reels/batch", "Trending format adaptation", "Music & effects", "Captions & hooks", "Hashtag strategy"],
+                price: "₹8,000/batch",
+                icon: Smartphone,
+            },
+            {
+                name: "Corporate Films",
+                slug: "corporate-films",
+                description: "Premium brand films for your website, investor deck, or corporate events that tell your brand story.",
+                deliverables: ["3–5 min brand film", "Pre-production planning", "Professional crew", "Post-production", "Soundtrack"],
+                price: "₹50,000/film",
+                icon: Building,
+            },
+            {
+                name: "Video Editing Services",
+                slug: "video-editing",
+                description: "Professional editing for your raw footage — color grading, transitions, graphics, and final polish.",
+                deliverables: ["Raw footage editing", "Color grading", "Motion graphics", "Sound mixing", "Export in all formats"],
+                price: "₹5,000/video",
+                icon: Scissors,
+            },
+        ],
+        process: [
+            { step: "01", title: "Pre-Production", description: "Script writing, storyboarding, and planning to ensure every video hits the mark." },
+            { step: "02", title: "Production", description: "Professional filming or animation with top-quality equipment and creative direction." },
+            { step: "03", title: "Post-Production", description: "Editing, color grading, sound design, and final delivery in all required formats." },
+        ],
+        faqs: [
+            { question: "Do you handle filming or just editing?", answer: "Both! We offer end-to-end video production (scripting → filming → editing) as well as standalone editing services." },
+            { question: "Can I send my own footage to edit?", answer: "Absolutely. Our Video Editing sub-service starts at ₹5,000 per video for raw footage editing." },
+            { question: "What formats do you deliver in?", answer: "We deliver in MP4 (H.264), plus platform-specific formats for Instagram (9:16), YouTube (16:9), and LinkedIn (1:1)." },
+        ],
+    },
+
+    // ── 8. Analytics & Reporting ──
+    {
+        slug: "analytics-reporting",
+        title: "Analytics & Reporting",
+        tagline: "Turn data into actionable growth insights",
+        description:
+            "Make confident decisions with comprehensive analytics, custom dashboards, and clear reports that show exactly what's working and what's not.",
+        icon: BarChart3,
+        color: "text-emerald-500",
+        bgColor: "bg-emerald-500/10",
+        gradient: "from-emerald-500 to-teal-400",
+        image: "/images/services/analytics.svg",
+        startingPrice: "₹5,000/mo",
+        subServices: [
+            {
+                name: "Dashboard Setup",
+                slug: "dashboard-setup",
+                description: "Custom analytics dashboards that consolidate all your marketing data into one real-time view.",
+                deliverables: ["Google Analytics 4 setup", "Custom dashboard build", "KPI tracking", "Real-time data feeds", "Team access setup"],
+                price: "₹8,000/setup",
+                icon: LayoutGrid,
+            },
+            {
+                name: "Campaign Tracking",
+                slug: "campaign-tracking",
+                description: "End-to-end tracking for every campaign — UTMs, pixels, conversion events, and attribution.",
+                deliverables: ["UTM framework", "Pixel installation", "Conversion event setup", "Goal tracking", "Cross-platform attribution"],
+                price: "₹5,000/setup",
+                icon: Target,
+            },
+            {
+                name: "Monthly Performance Reports",
+                slug: "monthly-reports",
+                description: "Beautiful, actionable monthly reports that translate data into clear insights and next steps.",
+                deliverables: ["Executive summary", "Channel-wise breakdown", "ROI calculations", "Growth trends", "Actionable recommendations"],
+                price: "₹5,000/mo",
+                icon: FileText,
+            },
+            {
+                name: "Conversion Rate Optimization",
+                slug: "conversion-optimization",
+                description: "Data-driven optimization of your website and funnels to increase conversion rates and revenue.",
+                deliverables: ["Funnel analysis", "Heatmap & scroll tracking", "A/B testing", "Form optimization", "Landing page improvements"],
+                price: "₹10,000/mo",
+                icon: TrendingUp,
+            },
+            {
+                name: "Attribution Modeling",
+                slug: "attribution-modeling",
+                description: "Understand which channels truly drive revenue with multi-touch attribution and marketing mix modeling.",
+                deliverables: ["Multi-touch attribution setup", "Channel contribution analysis", "Budget allocation model", "Customer journey mapping", "Quarterly review"],
+                price: "₹12,000/mo",
+                icon: Activity,
+            },
+            {
+                name: "Competitor Analysis & Benchmarking",
+                slug: "competitor-benchmarking",
+                description: "Regular competitor monitoring and benchmarking to stay ahead of industry trends and competition.",
+                deliverables: ["5 competitor tracking", "Traffic & keyword comparison", "Social media benchmarks", "Ad creative monitoring", "Monthly insights"],
+                price: "₹6,000/mo",
+                icon: Users,
+            },
+        ],
+        process: [
+            { step: "01", title: "Audit & Setup", description: "Audit your current analytics, fix tracking gaps, and set up proper measurement." },
+            { step: "02", title: "Monitor & Analyze", description: "Continuously monitor all channels and surface the insights that matter most." },
+            { step: "03", title: "Report & Recommend", description: "Deliver clear reports with actionable recommendations to drive better results." },
+        ],
+        faqs: [
+            { question: "Which analytics tools do you use?", answer: "Google Analytics 4, Google Tag Manager, Meta Pixel, Hotjar, and custom dashboards via Looker Studio or similar tools." },
+            { question: "Can you work with our existing analytics setup?", answer: "Yes! We'll audit your current setup, fix any tracking issues, and layer in additional insights." },
+            { question: "How often do we review performance?", answer: "We deliver monthly reports with a strategy call. Enterprise clients get weekly check-ins." },
+        ],
+    },
+
+    // ── 9. Influencer Marketing ──
+    {
+        slug: "influencer-marketing",
+        title: "Influencer Marketing",
+        tagline: "Amplify your brand through trusted voices",
+        description:
+            "Partner with the right influencers to reach engaged audiences, build credibility, and drive measurable results for your brand.",
+        icon: Users,
+        color: "text-rose-500",
+        bgColor: "bg-rose-500/10",
+        gradient: "from-rose-500 to-pink-400",
+        image: "/images/services/influencer.svg",
+        startingPrice: "₹20,000/campaign",
+        subServices: [
+            {
+                name: "Micro-Influencer Campaigns",
+                slug: "micro-influencer",
+                description: "Partner with niche micro-influencers (10K–100K followers) for authentic, high-engagement campaigns.",
+                deliverables: ["Influencer identification", "Outreach & negotiation", "Content brief", "Campaign management", "Performance report"],
+                price: "₹15,000/campaign",
+                icon: Users,
+            },
+            {
+                name: "Macro-Influencer Outreach",
+                slug: "macro-influencer",
+                description: "Collaborate with established influencers (100K+ followers) for large-scale brand awareness campaigns.",
+                deliverables: ["Influencer shortlisting", "Contract negotiation", "Content approval workflow", "Multi-platform coordination", "ROI tracking"],
+                price: "₹40,000/campaign",
+                icon: Megaphone,
+            },
+            {
+                name: "Influencer Strategy & Planning",
+                slug: "influencer-strategy",
+                description: "End-to-end influencer marketing strategy aligned with your brand goals and target audience.",
+                deliverables: ["Campaign strategy document", "Influencer matching criteria", "Content themes", "Budget allocation", "Timeline & milestones"],
+                price: "₹10,000",
+                icon: Target,
+            },
+            {
+                name: "Contract & Negotiation",
+                slug: "contract-negotiation",
+                description: "Professional negotiation and contract management to ensure fair deals and brand-safe partnerships.",
+                deliverables: ["Contract drafting", "Rate negotiation", "Usage rights management", "Payment milestones", "Legal review"],
+                price: "₹5,000/deal",
+                icon: Handshake,
+            },
+            {
+                name: "Performance Tracking & ROI",
+                slug: "influencer-performance",
+                description: "Track every influencer campaign with detailed analytics — reach, engagement, conversions, and ROI.",
+                deliverables: ["Custom tracking links", "Engagement analytics", "Conversion attribution", "Audience overlap analysis", "Campaign comparison"],
+                price: "₹5,000/campaign",
+                icon: BarChart3,
+            },
+            {
+                name: "Content Review & Approval",
+                slug: "content-review",
+                description: "Ensure all influencer content is on-brand, compliant, and high-quality before it goes live.",
+                deliverables: ["Content brief creation", "Draft review", "Brand compliance check", "Feedback rounds", "Final approval"],
+                price: "₹3,000/campaign",
+                icon: ThumbsUp,
+            },
+        ],
+        process: [
+            { step: "01", title: "Discover & Match", description: "Identify the perfect influencers aligned with your brand, audience, and campaign goals." },
+            { step: "02", title: "Negotiate & Create", description: "Handle all negotiations, contracts, and collaborate with influencers on content creation." },
+            { step: "03", title: "Launch & Measure", description: "Launch the campaign, track performance, and deliver detailed ROI reports." },
+        ],
+        faqs: [
+            { question: "How do you find the right influencers?", answer: "We use a combination of tools, manual research, and our network to find influencers that match your brand values, audience demographics, and budget." },
+            { question: "Do you handle the contracts?", answer: "Yes, we manage everything — outreach, negotiation, contracts, content approval, and payment coordination." },
+            { question: "What's the minimum budget for influencer campaigns?", answer: "Micro-influencer campaigns can start from ₹15,000. For larger campaigns with macro-influencers, we recommend ₹50,000+." },
+        ],
+    },
+
+    // ── 10. Celebrity Marketing ──
+    {
+        slug: "celebrity-marketing",
+        title: "Celebrity Marketing",
+        tagline: "Elevate your brand with high-profile partnerships",
+        description:
+            "Strategic celebrity endorsements and partnerships that skyrocket brand awareness, credibility, and sales through premium associations.",
+        icon: Star,
+        color: "text-indigo-500",
+        bgColor: "bg-indigo-500/10",
+        gradient: "from-indigo-500 to-violet-400",
+        image: "/images/services/celebrity.svg",
+        startingPrice: "₹2,00,000/campaign",
+        subServices: [
+            {
+                name: "Celebrity Brand Endorsement",
+                slug: "brand-endorsement",
+                description: "Get a celebrity face for your brand with strategic endorsement deals for ads, social media, and events.",
+                deliverables: ["Celebrity matching", "Deal structuring", "Ad shoot coordination", "Usage rights", "Campaign launch support"],
+                price: "₹2,00,000+",
+                icon: Star,
+            },
+            {
+                name: "Brand Ambassadorship Programs",
+                slug: "brand-ambassadorship",
+                description: "Long-term celebrity partnerships that build deep brand association and sustained visibility.",
+                deliverables: ["Ambassador selection", "Annual contract", "Content calendar", "Exclusive appearances", "Social integrations"],
+                price: "₹5,00,000+/year",
+                icon: Award,
+            },
+            {
+                name: "Event & Red Carpet Integration",
+                slug: "event-integration",
+                description: "Celebrity appearances at your product launches, store openings, and corporate events for maximum media coverage.",
+                deliverables: ["Celebrity booking", "Event coordination", "Media invite list", "Red carpet setup", "Post-event coverage"],
+                price: "₹3,00,000+",
+                icon: Trophy,
+            },
+            {
+                name: "PR & Media Alignment",
+                slug: "pr-media-alignment",
+                description: "Strategic PR campaigns around celebrity partnerships to maximize media coverage and brand mentions.",
+                deliverables: ["Press release drafting", "Media outreach", "Interview coordination", "News placements", "Coverage tracking"],
+                price: "₹50,000/campaign",
+                icon: Newspaper,
+            },
+            {
+                name: "Social Media Campaign",
+                slug: "celebrity-social",
+                description: "Celebrity-driven social media campaigns — posts, stories, reels — to reach millions and drive engagement.",
+                deliverables: ["Content strategy", "Celebrity social posts", "Story & reel campaigns", "Engagement monitoring", "Performance analytics"],
+                price: "₹1,00,000+",
+                icon: Share2,
+            },
+            {
+                name: "Content Licensing",
+                slug: "content-licensing",
+                description: "License celebrity content for your ads, website, packaging, and marketing materials.",
+                deliverables: ["Usage rights negotiation", "Platform-specific licensing", "Duration & territory terms", "Legal documentation", "Asset delivery"],
+                price: "₹50,000+",
+                icon: FileText,
+            },
+        ],
+        process: [
+            { step: "01", title: "Celebrity Matching", description: "Identify the perfect celebrity based on your brand values, target audience, and budget." },
+            { step: "02", title: "Negotiate & Execute", description: "Handle all negotiations, contracts, and execute the campaign with precision." },
+            { step: "03", title: "Amplify & Report", description: "Maximize media coverage, track impact, and report on ROI and brand lift." },
+        ],
+        faqs: [
+            { question: "Do you have direct access to celebrities?", answer: "Yes, we have established relationships with talent agencies and celebrity managers across India. We can facilitate introductions and negotiations." },
+            { question: "What's the process timeline?", answer: "Celebrity campaigns typically take 4–8 weeks from initial discussion to campaign launch, depending on celebrity availability." },
+            { question: "Can I work with regional celebrities?", answer: "Absolutely! Regional celebrities often offer better ROI for location-specific campaigns. We work with talent across all Indian markets." },
+        ],
+    },
+
+    // ── 11. AI Influencer ──
+    {
+        slug: "ai-influencer",
+        title: "AI Influencer",
+        tagline: "Next-gen AI content — no human talent required",
+        description:
+            "Leverage cutting-edge AI to create hyper-realistic virtual influencers, automated ad content, and AI-powered creatives at scale — faster and more affordable than traditional production.",
+        icon: Bot,
+        color: "text-fuchsia-500",
+        bgColor: "bg-fuchsia-500/10",
+        gradient: "from-fuchsia-500 to-purple-400",
+        image: "/images/services/ai-influencer.svg",
+        startingPrice: "₹10,000/mo",
+        subServices: [
+            {
+                name: "AI Ads",
+                slug: "ai-ads",
+                description: "AI-generated ad creatives for social media, performance campaigns, and display advertising — unlimited variations, instant turnaround.",
+                deliverables: ["5 ad creative sets", "A/B variant generation", "Platform-optimized formats (Meta, Google, LinkedIn)", "Copy suggestions", "Performance-based iteration"],
+                price: "₹5,000/batch",
+                icon: Image,
+            },
+            {
+                name: "AI Avatar Creation",
+                slug: "ai-avatar",
+                description: "Custom AI-generated virtual influencer or brand mascot with unique personality, style, and consistent look.",
+                deliverables: ["Custom avatar character design", "3 poses & expressions", "Brand-styled wardrobe", "Social profile assets", "Usage across all platforms"],
+                price: "₹8,000/avatar",
+                icon: Bot,
+            },
+            {
+                name: "AI UGC Ads",
+                slug: "ai-ugc-ads",
+                description: "Authentic-looking user-generated-style video ads created entirely by AI — perfect for D2C brands and product marketing.",
+                deliverables: ["3 UGC-style videos (15–60s)", "AI script + voiceover", "Product showcase integration", "Captions & subtitles", "Platform-ready formats"],
+                price: "₹7,000/video",
+                icon: Film,
+            },
+            {
+                name: "Voice Cloning & Multilingual Dubbing",
+                slug: "voice-cloning",
+                description: "Clone any voice (with permission) and create multilingual versions of your ads in Hindi, Tamil, Telugu, and more.",
+                deliverables: ["AI voice model creation", "5 language dubs", "Lip-sync with video", "Natural intonation", "Accent customization"],
+                price: "₹10,000/project",
+                icon: Mic,
+            },
+            {
+                name: "AI Script Writing & Storyboarding",
+                slug: "ai-scripting",
+                description: "AI-powered scripts, hooks, and visual storyboards for ads, reels, and video campaigns — 10x faster than manual writing.",
+                deliverables: ["10 ad scripts", "Storyboard visuals", "Hook variations", "CTA optimization", "Platform-specific formatting"],
+                price: "₹3,000/pack",
+                icon: PenTool,
+            },
+            {
+                name: "AI Brand Ambassador",
+                slug: "ai-brand-ambassador",
+                description: "Full virtual influencer identity — character design, social profile, and ongoing content — your brand's AI face that never takes a day off.",
+                deliverables: ["Complete character identity", "Social media profile setup", "10 initial content pieces", "Personality & voice guidelines", "Monthly content calendar"],
+                price: "₹25,000/setup",
+                icon: Sparkles,
+            },
+        ],
+        process: [
+            { step: "01", title: "Brief & Concept", description: "Understand your brand, audience, and goals to define the AI creative direction." },
+            { step: "02", title: "Generate & Refine", description: "Create AI content, review with your team, and refine until it's perfect." },
+            { step: "03", title: "Deliver & Scale", description: "Deliver final assets and scale production — AI makes unlimited iterations possible." },
+        ],
+        faqs: [
+            { question: "Is AI-generated content safe for my brand?", answer: "Yes! All our AI output is deepfake-safe, brand-compliant, and properly disclosed. We follow ethical AI guidelines and platform policies." },
+            { question: "Can I use AI content for paid ads?", answer: "Absolutely. Our AI ads are optimized for Meta, Google, and LinkedIn ad platforms with proper formats and specifications." },
+            { question: "How fast is the turnaround?", answer: "AI content is delivered 5–10x faster than traditional production. Most batches are ready within 2–3 business days." },
+            { question: "Do I own the AI-generated content?", answer: "Yes, you receive full commercial rights to all AI content we create for you." },
+        ],
+    },
+
+    // ── 12. WhatsApp Marketing ──
+    {
+        slug: "whatsapp-marketing",
+        title: "WhatsApp Marketing",
+        tagline: "Reach customers where they already are",
+        description:
+            "Unlock the power of WhatsApp to engage customers directly, automate conversations, and drive conversions through the world's most popular messaging platform.",
+        icon: MessageCircle,
+        color: "text-green-500",
+        bgColor: "bg-green-500/10",
+        gradient: "from-green-500 to-emerald-400",
+        image: "/images/services/whatsapp.svg",
+        startingPrice: "₹3,000/mo",
+        subServices: [
+            {
+                name: "Bulk WhatsApp Campaigns",
+                slug: "bulk-campaigns",
+                description: "Send personalized bulk messages to your customer list — promotions, offers, and updates at scale.",
+                deliverables: ["Campaign setup", "Message template design", "Contact list segmentation", "Scheduling", "Delivery & read reports"],
+                price: "₹3,000/mo",
+                icon: Send,
+            },
+            {
+                name: "WhatsApp Business API Integration",
+                slug: "api-integration",
+                description: "Set up the official WhatsApp Business API for automated messaging, CRM integration, and green-tick verification.",
+                deliverables: ["API setup & configuration", "Green-tick application", "CRM/website integration", "Template approval", "Testing & go-live"],
+                price: "₹10,000/setup",
+                icon: Blocks,
+            },
+            {
+                name: "Chatbot & Auto-Replies",
+                slug: "chatbot-setup",
+                description: "24/7 AI-powered chatbot that handles inquiries, qualifies leads, and books appointments automatically.",
+                deliverables: ["Chatbot flow design", "FAQ automation", "Lead qualification flow", "Appointment booking", "Human handoff setup"],
+                price: "₹8,000/setup",
+                icon: BotMessageSquare,
+            },
+            {
+                name: "Broadcast & Group Marketing",
+                slug: "broadcast-marketing",
+                description: "Strategic broadcast lists and group marketing to keep your audience engaged with regular updates and offers.",
+                deliverables: ["Broadcast list management", "Content calendar", "Offer campaigns", "Event notifications", "Engagement tracking"],
+                price: "₹3,000/mo",
+                icon: Radio,
+            },
+            {
+                name: "Click-to-WhatsApp Ads",
+                slug: "click-to-whatsapp",
+                description: "Facebook & Instagram ads that drive clicks directly to WhatsApp conversations — the fastest path to conversion.",
+                deliverables: ["Ad campaign setup", "Audience targeting", "Ad creative design", "Conversion tracking", "Optimization & reporting"],
+                price: "₹5,000/mo + ad spend",
+                icon: MousePointerClick,
+            },
+            {
+                name: "Analytics & Performance Reporting",
+                slug: "whatsapp-analytics",
+                description: "Track message delivery, open rates, response times, and conversion metrics for your WhatsApp campaigns.",
+                deliverables: ["Delivery & read analytics", "Response time tracking", "Conversion attribution", "Campaign comparison", "Monthly insights report"],
+                price: "₹2,000/mo",
+                icon: Activity,
+            },
+        ],
+        process: [
+            { step: "01", title: "Setup & Strategy", description: "Configure WhatsApp Business, integrate with your systems, and plan your messaging strategy." },
+            { step: "02", title: "Automate & Launch", description: "Build chatbots, create templates, and launch your first campaigns." },
+            { step: "03", title: "Optimize & Scale", description: "Analyze performance, optimize messages, and scale your WhatsApp marketing machine." },
+        ],
+        faqs: [
+            { question: "Do I need WhatsApp Business API?", answer: "For bulk messaging and automation, yes. We help you apply, get verified (green tick), and set up the API from scratch." },
+            { question: "Is bulk WhatsApp messaging legal?", answer: "Yes, when done through the official WhatsApp Business API with proper opt-in consent. We ensure full compliance with WhatsApp's policies." },
+            { question: "Can the chatbot handle complex questions?", answer: "Our AI chatbots handle most common queries. For complex questions, we set up automatic handoff to your human team." },
+        ],
+    },
+];
+
+// ─── Helper ──────────────────────────────────────────────────────────
+export function getServiceBySlug(slug: string): ServiceDetail | undefined {
+    return SERVICE_DETAILS.find((s) => s.slug === slug);
+}
+
+export function getAllServiceSlugs(): string[] {
+    return SERVICE_DETAILS.map((s) => s.slug);
+}
