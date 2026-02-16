@@ -15,6 +15,8 @@ const FOOTER_LINKS = {
         { label: "Web Development", href: "/services#web" },
         { label: "Email Marketing", href: "/services#email" },
         { label: "Brand Strategy", href: "/services#brand" },
+    ],
+    "More Services": [
         { label: "Video Production", href: "/services#video" },
         { label: "Analytics & Reporting", href: "/services#analytics" },
         { label: "Influencer Marketing", href: "/services#influencer" },
@@ -68,7 +70,7 @@ export function PublicFooter() {
     return (
         <footer className="border-t border-border bg-card">
             <Container>
-                <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+                <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
                     {/* Brand + Newsletter */}
                     <div className="lg:col-span-2 space-y-6">
                         <Link href="/" className="flex items-center gap-2">
