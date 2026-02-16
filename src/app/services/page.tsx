@@ -39,6 +39,7 @@ const SERVICES = [
         color: "text-blue-500",
         bgColor: "bg-blue-500/10",
         image: "/images/services/seo-marketing.svg",
+        price: "Starts at ₹12,000/mo",
     },
     {
         icon: BarChart3,
@@ -53,6 +54,7 @@ const SERVICES = [
         color: "text-amber-500",
         bgColor: "bg-amber-500/10",
         image: "/images/services/ppc.svg",
+        price: "Starts at ₹8,000/mo",
     },
     {
         icon: Users,
@@ -67,6 +69,7 @@ const SERVICES = [
         color: "text-pink-500",
         bgColor: "bg-pink-500/10",
         image: "/images/services/social.svg",
+        price: "Starts at ₹15,000/mo",
     },
     {
         icon: Globe,
@@ -81,6 +84,7 @@ const SERVICES = [
         color: "text-emerald-500",
         bgColor: "bg-emerald-500/10",
         image: "/images/services/web.svg",
+        price: "Starts at ₹20,000",
     },
     {
         icon: Mail,
@@ -95,6 +99,7 @@ const SERVICES = [
         color: "text-violet-500",
         bgColor: "bg-violet-500/10",
         image: "/images/services/email.svg",
+        price: "Starts at ₹5,000/mo",
     },
     {
         icon: Sparkles,
@@ -109,6 +114,7 @@ const SERVICES = [
         color: "text-orange-500",
         bgColor: "bg-orange-500/10",
         image: "/images/services/brand.svg",
+        price: "Starts at ₹15,000",
     },
     {
         icon: Video,
@@ -123,6 +129,7 @@ const SERVICES = [
         color: "text-red-500",
         bgColor: "bg-red-500/10",
         image: "/images/services/video.svg",
+        price: "Starts at ₹10,000/video",
     },
     {
         icon: PieChart,
@@ -137,6 +144,7 @@ const SERVICES = [
         color: "text-cyan-500",
         bgColor: "bg-cyan-500/10",
         image: "/images/services/analytics.svg",
+        price: "Starts at ₹5,000/mo",
     },
     {
         icon: Megaphone,
@@ -151,6 +159,7 @@ const SERVICES = [
         color: "text-rose-500",
         bgColor: "bg-rose-500/10",
         image: "/images/services/influencer.svg",
+        price: "Starts at ₹20,000/campaign",
     },
     {
         icon: Star,
@@ -165,6 +174,7 @@ const SERVICES = [
         color: "text-indigo-500",
         bgColor: "bg-indigo-500/10",
         image: "/images/services/celebrity.svg",
+        price: "Starts at ₹2,00,000/campaign",
     },
     {
         icon: Bot,
@@ -181,6 +191,7 @@ const SERVICES = [
         color: "text-fuchsia-500",
         bgColor: "bg-fuchsia-500/10",
         image: "/images/services/ai-influencer.svg",
+        price: "Starts at ₹10,000/mo",
     },
     {
         icon: MessageCircle,
@@ -197,6 +208,7 @@ const SERVICES = [
         color: "text-green-500",
         bgColor: "bg-green-500/10",
         image: "/images/services/whatsapp.svg",
+        price: "Starts at ₹3,000/mo",
     },
 ];
 
@@ -239,6 +251,7 @@ export default function ServicesPage() {
                                     title={service.title}
                                     description={service.description}
                                     features={service.features}
+                                    price={service.price}
                                     color={service.color}
                                     bgColor={service.bgColor}
                                     image={service.image}

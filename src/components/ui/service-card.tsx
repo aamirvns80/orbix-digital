@@ -7,6 +7,7 @@ interface ServiceCardProps {
     title: string;
     description: string;
     features: string[];
+    price?: string;
     href?: string;
     color?: string;
     bgColor?: string;
@@ -18,6 +19,7 @@ export function ServiceCard({
     title,
     description,
     features,
+    price,
     href = "/contact",
     color = "text-primary",
     bgColor = "bg-primary/10",
@@ -52,6 +54,11 @@ export function ServiceCard({
                         </li>
                     ))}
                 </ul>
+                {price && (
+                    <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${bgColor} mb-4`}>
+                        <span className={`text-sm font-semibold ${color}`}>{price}</span>
+                    </div>
+                )}
                 <Link
                     href={href}
                     className={`inline-flex items-center gap-1 text-sm font-medium ${color} hover:underline group-hover:gap-2 transition-all`}
