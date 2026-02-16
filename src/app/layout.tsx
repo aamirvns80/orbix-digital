@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toast";
 import { TRPCProvider } from "@/lib/trpc/client";
 import { PageTransition } from "@/components/ui/page-transition";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { ChatBot } from "@/components/chatbot";
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://OrbixDigital.com";
 
@@ -130,6 +131,7 @@ export default function RootLayout({
               {children}
             </PageTransition>
             <WhatsAppButton />
+            <ChatBot />
             <Toaster />
           </TRPCProvider>
         </ThemeProvider>
