@@ -27,20 +27,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { toast } from "@/components/ui/toast";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
-const SERVICES = [
-    "SEO & Content Marketing",
-    "Social Media Management",
-    "Paid Advertising (PPC)",
-    "Web Design & Development",
-    "Email Marketing",
-    "Brand Strategy",
-    "Video Production",
-    "Analytics & Reporting",
-    "Influencer Marketing",
-    "Celebrity Marketing",
-    "AI Influencer",
-    "WhatsApp Marketing",
-];
+import { SERVICE_DETAILS } from "@/lib/data/services";
+
+// Get service titles from the shared data
+const SERVICES = SERVICE_DETAILS.map((s) => s.title);
 
 const BUDGETS = [
     "Under ₹25,000/mo",
@@ -104,6 +94,42 @@ function ContactForm() {
         if (planParam && PLAN_INFO[planParam]) {
             setSelectedPlan(planParam);
         }
+
+        // Handle service pre-selection
+        const serviceParam = searchParams.get("service");
+        if (serviceParam) {
+            // Find the main service that matches the slug OR contains a sub-service with that slug
+            const matchedService = SERVICE_DETAILS.find(
+                (s) => s.slug === serviceParam || s.subServices.some((sub) => sub.slug === serviceParam)
+            );
+
+            if (matchedService) {
+                setSelectedServices((prev) => {
+                    if (!prev.includes(matchedService.title)) {
+                        return [...prev, matchedService.title];
+                    }
+                    return prev;
+                });
+
+                // If it's a specific sub-service, we can optionally note it in the message
+                // (Only if message is empty to avoid overwriting user input on re-renders/navigation)
+                const subService = matchedService.subServices.find((sub) => sub.slug === serviceParam);
+                if (subService) {
+                    setFormData((prev) => {
+                        if (!prev.message.includes(subService.name)) {
+                            return {
+                                ...prev,
+                                message: prev.message
+                                    ? prev.message
+                                    : `I'm interested in ${subService.name}.`,
+                            };
+                        }
+                        return prev;
+                    });
+                }
+            }
+        }
+
         setUtm({
             utmSource: searchParams.get("utm_source") ?? "",
             utmMedium: searchParams.get("utm_medium") ?? "",
