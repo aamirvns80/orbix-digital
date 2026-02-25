@@ -50,7 +50,7 @@ export default function LoginPage() {
                     <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
                         <Sparkles className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                    <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                 </Link>
                 <ThemeToggle />
             </header>

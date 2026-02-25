@@ -130,7 +130,7 @@ export default function PublicProposalPage({ params }: { params: { token: string
                             </div>
                             <div className="pt-2">
                                 <p className="text-muted-foreground text-xs">
-                                    By accepting this proposal, you agree to the Terms of Service and Privacy Policy of OrbixDigital.
+                                    By accepting this proposal, you agree to the Terms of Service and Privacy Policy of MarketifyDigiAI.
                                 </p>
                             </div>
                         </CardContent>

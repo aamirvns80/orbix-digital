@@ -9,8 +9,8 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-    title: "Blog — OrbixDigital",
-    description: "Marketing tips, agency growth strategies, and industry insights from the OrbixDigital team.",
+    title: "Blog — MarketifyDigiAI",
+    description: "Marketing tips, agency growth strategies, and industry insights from the MarketifyDigiAI team.",
 };
 
 const BLOG_POSTS = [
@@ -95,7 +95,7 @@ export default function BlogPage() {
                     <div className="text-center space-y-4">
                         <ScrollReveal delay={100}>
                             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
-                                The OrbixDigital <span className="gradient-text">Blog</span>
+                                The MarketifyDigiAI <span className="gradient-text">Blog</span>
                             </h1>
                         </ScrollReveal>
                         <ScrollReveal delay={250}>

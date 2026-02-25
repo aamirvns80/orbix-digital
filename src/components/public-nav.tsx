@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sparkles, ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -27,10 +28,8 @@ export function PublicNav() {
                 <div className="flex h-16 items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
-                        <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                            <Sparkles className="h-5 w-5 text-white" />
-                        </div>
-                        <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                        <Image src="/logo.svg" alt="MarketifyDigiAI" width={32} height={32} className="group-hover:shadow-lg transition-shadow rounded-lg" />
+                        <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                     </Link>
 
                     {/* Desktop Nav */}

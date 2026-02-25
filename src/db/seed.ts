@@ -29,7 +29,7 @@ async function seed() {
         .insert(users)
         .values({
             name: "Admin User",
-            email: "admin@OrbixDigital.com",
+            email: "admin@MarketifyDigiAI.com",
             passwordHash,
             role: "admin",
             emailVerified: new Date(),
@@ -40,7 +40,7 @@ async function seed() {
         .insert(users)
         .values({
             name: "Sarah Miller",
-            email: "sarah@OrbixDigital.com",
+            email: "sarah@MarketifyDigiAI.com",
             passwordHash,
             role: "team",
             emailVerified: new Date(),
@@ -341,7 +341,7 @@ async function seed() {
             name: "Sarah Chen",
             title: "CEO",
             company: "GrowthLab Digital",
-            quote: "OrbixDigital transformed how we manage our pipeline. We closed 3x more deals in the first quarter after switching.",
+            quote: "MarketifyDigiAI transformed how we manage our pipeline. We closed 3x more deals in the first quarter after switching.",
             rating: 5,
             featured: true,
         },

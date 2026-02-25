@@ -20,7 +20,7 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-    title: "Services — OrbixDigital",
+    title: "Services — MarketifyDigiAI",
     description: "Full-service digital marketing: SEO, PPC, social media, web development, email marketing, brand strategy, video production, and analytics.",
 };
 

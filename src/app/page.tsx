@@ -24,7 +24,7 @@ import { PublicFooter } from "@/components/public-footer";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-  title: "OrbixDigital — Run Your Marketing Agency Like a Machine",
+  title: "MarketifyDigiAI — Run Your Marketing Agency Like a Machine",
   description:
     "The all-in-one platform to manage leads, clients, content, and campaigns. Stop juggling tools and start scaling your business.",
 };
@@ -87,7 +87,7 @@ const CLIENT_LOGOS = [
 
 const TESTIMONIALS = [
   {
-    quote: "OrbixDigital completely transformed our lead management. We closed 3x more deals in the first quarter itself. Their team truly understands the Indian market.",
+    quote: "MarketifyDigiAI completely transformed our lead management. We closed 3x more deals in the first quarter itself. Their team truly understands the Indian market.",
     name: "Rajesh Sharma",
     title: "Founder & CEO",
     company: "TechVista Solutions, Mumbai",
@@ -180,7 +180,7 @@ export default function HomePage() {
               <div className="mt-12 relative w-full aspect-[16/9] max-w-5xl mx-auto rounded-xl overflow-hidden glow-border shadow-2xl">
                 <Image
                   src="/images/hero-dashboard.svg"
-                  alt="OrbixDigital Dashboard"
+                  alt="MarketifyDigiAI Dashboard"
                   fill
                   className="object-cover"
                 />
@@ -318,7 +318,7 @@ export default function HomePage() {
                 Loved by <span className="gradient-text">Businesses</span>
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                See what marketing teams are saying about OrbixDigital.
+                See what marketing teams are saying about MarketifyDigiAI.
               </p>
             </div>
           </ScrollReveal>

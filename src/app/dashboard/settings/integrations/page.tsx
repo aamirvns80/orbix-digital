@@ -95,7 +95,7 @@ export default function IntegrationsPage() {
                                 <DialogHeader>
                                     <DialogTitle>Create API Key</DialogTitle>
                                     <DialogDescription>
-                                        Generate a new key to access the OrbixDigital API.
+                                        Generate a new key to access the MarketifyDigiAI API.
                                     </DialogDescription>
                                 </DialogHeader>
 

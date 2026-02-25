@@ -73,7 +73,7 @@ export default function RegisterPage() {
                     <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
                         <Sparkles className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                    <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                 </Link>
                 <ThemeToggle />
             </header>
@@ -84,7 +84,7 @@ export default function RegisterPage() {
                         <CardHeader className="text-center space-y-2">
                             <CardTitle className="text-2xl">Create your account</CardTitle>
                             <CardDescription>
-                                Get started with OrbixDigital in seconds
+                                Get started with MarketifyDigiAI in seconds
                             </CardDescription>
                         </CardHeader>
                         <CardContent>

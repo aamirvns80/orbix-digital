@@ -210,7 +210,7 @@ function ContactForm() {
                         <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
                             <Sparkles className="h-5 w-5 text-white" />
                         </div>
-                        <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                        <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                     </Link>
                     <ThemeToggle />
                 </header>
@@ -241,7 +241,7 @@ function ContactForm() {
                     <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
                         <Sparkles className="h-5 w-5 text-white" />
                     </div>
-                    <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                    <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                 </Link>
                 <ThemeToggle />
             </header>
@@ -291,7 +291,7 @@ function ContactForm() {
                                 <div className="pt-6 border-t border-white/10 space-y-3">
                                     <div className="flex items-center gap-3 text-sm text-white/60">
                                         <Mail className="h-4 w-4" />
-                                        <span>hello@orbixdigital.com</span>
+                                        <span>hello@marketifydigiai.com</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-sm text-white/60">
                                         <Phone className="h-4 w-4" />

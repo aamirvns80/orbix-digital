@@ -5,7 +5,7 @@ import { PublicNav } from "@/components/public-nav";
 import { PublicFooter } from "@/components/public-footer";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy — OrbixDigital",
+    title: "Privacy Policy — MarketifyDigiAI",
     description: "Our commitment to protecting your privacy and personal data.",
 };
 
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                         <section>
                             <h2 className="text-2xl font-semibold mt-8 mb-4">1. Introduction</h2>
                             <p>
-                                Welcome to OrbixDigital. We respect your privacy and are committed to protecting your personal data.
+                                Welcome to MarketifyDigiAI. We respect your privacy and are committed to protecting your personal data.
                                 This privacy policy will inform you as to how we look after your personal data when you visit our website
                                 (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
                             </p>
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
                                 If you have any questions about this privacy policy or our privacy practices, please contact us at:
                             </p>
                             <div className="mt-4 p-4 bg-muted rounded-lg">
-                                <p>Email: privacy@OrbixDigital.com</p>
+                                <p>Email: privacy@MarketifyDigiAI.com</p>
                                 <p>Address: 123 Marketing Street, Creative City, ST 12345</p>
                             </div>
                         </section>

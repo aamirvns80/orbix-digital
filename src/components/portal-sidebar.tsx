@@ -39,7 +39,7 @@ export function PortalSidebar() {
         <div className="flex flex-col h-full border-r bg-background w-64 md:w-72 lg:w-80 fixed left-0 top-0 bottom-0 z-40">
             <div className="p-6 border-b flex items-center justify-between">
                 <Link href="/portal" className="font-bold text-xl">
-                    OrbixDigital <span className="text-primary text-sm font-normal ml-1">Portal</span>
+                    MarketifyDigiAI <span className="text-primary text-sm font-normal ml-1">Portal</span>
                 </Link>
                 <div className="md:hidden">
                     {/* Mobile toggle would go here */}

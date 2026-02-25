@@ -7,12 +7,12 @@ import { PageTransition } from "@/components/ui/page-transition";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { ChatBot } from "@/components/chatbot";
 
-const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://OrbixDigital.com";
+const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://MarketifyDigiAI.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "OrbixDigital — Marketing Agency Management Platform",
-    template: "%s | OrbixDigital",
+    default: "MarketifyDigiAI — Marketing Agency Management Platform",
+    template: "%s | MarketifyDigiAI",
   },
   description:
     "Full-service digital marketing platform. Manage leads, clients, content, and campaigns from a single dashboard. Trusted by 500+ businesses.",
@@ -25,15 +25,15 @@ export const metadata: Metadata = {
     "marketing automation",
     "client management",
   ],
-  authors: [{ name: "OrbixDigital Team" }],
-  creator: "OrbixDigital",
+  authors: [{ name: "MarketifyDigiAI Team" }],
+  creator: "MarketifyDigiAI",
   metadataBase: new URL(SITE_URL),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "OrbixDigital",
-    title: "OrbixDigital — Marketing Agency Management Platform",
+    siteName: "MarketifyDigiAI",
+    title: "MarketifyDigiAI — Marketing Agency Management Platform",
     description:
       "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
     images: [
@@ -41,17 +41,17 @@ export const metadata: Metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "OrbixDigital — Marketing Agency Management Platform",
+        alt: "MarketifyDigiAI — Marketing Agency Management Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OrbixDigital — Marketing Agency Management Platform",
+    title: "MarketifyDigiAI — Marketing Agency Management Platform",
     description:
       "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
     images: ["/og-image.svg"],
-    creator: "@OrbixDigital",
+    creator: "@MarketifyDigiAI",
   },
   robots: {
     index: true,
@@ -74,22 +74,22 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "OrbixDigital",
+  name: "MarketifyDigiAI",
   description:
     "Full-service digital marketing agency trusted by 500+ Indian businesses.",
   url: SITE_URL,
   logo: `${SITE_URL}/images/logo.png`,
   sameAs: [
-    "https://twitter.com/orbixdigital",
-    "https://linkedin.com/company/orbixdigital",
-    "https://instagram.com/orbixdigital",
-    "https://youtube.com/@orbixdigital",
+    "https://twitter.com/marketifydigiai",
+    "https://linkedin.com/company/marketifydigiai",
+    "https://instagram.com/marketifydigiai",
+    "https://youtube.com/@marketifydigiai",
   ],
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+91-98765-43210",
     contactType: "sales",
-    email: "hello@orbixdigital.com",
+    email: "hello@marketifydigiai.com",
     availableLanguage: ["English", "Hindi"],
   },
   offers: {

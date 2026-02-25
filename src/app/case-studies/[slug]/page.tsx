@@ -110,7 +110,7 @@ const CASE_STUDIES = [
             { type: "heading", text: "The Challenge" },
             { type: "paragraph", text: "FinEdge Capital had a manual, inefficient sales process. Their team was spending 40+ hours per week on data entry, lead qualification, and follow-ups — time that could be spent closing deals." },
             { type: "heading", text: "Our Approach" },
-            { type: "paragraph", text: "We built an end-to-end pipeline automation system using OrbixDigital, integrating their CRM, email marketing, and analytics platforms into a unified, intelligent workflow." },
+            { type: "paragraph", text: "We built an end-to-end pipeline automation system using MarketifyDigiAI, integrating their CRM, email marketing, and analytics platforms into a unified, intelligent workflow." },
             { type: "list", items: ["Automated lead scoring based on 15+ behavioral signals", "Intelligent routing to the right rep within minutes", "Multi-touch nurture sequences for each segment", "Real-time pipeline dashboards and forecasting", "Weekly automated reports for leadership"] },
             { type: "heading", text: "The Results" },
             { type: "paragraph", text: "The automation platform generated $2.4M in qualified pipeline in its first quarter. The sales team reclaimed 40 hours per week, and their lead response time dropped from hours to under 5 minutes." },
@@ -179,7 +179,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const study = CASE_STUDIES.find((s) => s.slug === slug);
     if (!study) return { title: "Case Study Not Found" };
     return {
-        title: `${study.title} — OrbixDigital Case Studies`,
+        title: `${study.title} — MarketifyDigiAI Case Studies`,
         description: study.excerpt,
     };
 }

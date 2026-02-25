@@ -39,10 +39,10 @@
   
   <!-- Logo icon -->
   <rect x="520" y="140" width="56" height="56" rx="14" fill="url(#accent)"/>
-  <text x="548" y="177" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="32" fill="white">C</text>
+  <text x="548" y="177" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="32" fill="white">M</text>
   
   <!-- Brand name -->
-  <text x="590" y="177" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="36" fill="white">OrbixDigital</text>
+  <text x="590" y="177" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="36" fill="white">MarketifyDigiAI</text>
   
   <!-- Tagline -->
   <text x="600" y="280" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="700" font-size="48" fill="white">Run Your Marketing Agency</text>

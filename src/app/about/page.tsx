@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-    title: "About — OrbixDigital",
+    title: "About — MarketifyDigiAI",
     description: "We're on a mission to give every business the tools to compete with the biggest players. Learn about our story, values, and team.",
 };
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
                         </ScrollReveal>
                         <ScrollReveal delay={250}>
                             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                                We started OrbixDigital because we lived the pain. Managing leads in spreadsheets,
+                                We started MarketifyDigiAI because we lived the pain. Managing leads in spreadsheets,
                                 juggling five different tools, and losing deals to disorganization.
                                 There had to be a better way — so we built it.
                             </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
                             {/* @ts-ignore */}
                             <Image
                                 src="/images/about-team.svg"
-                                alt="OrbixDigital Team"
+                                alt="MarketifyDigiAI Team"
                                 fill
                                 className="object-cover"
                             />
@@ -167,7 +167,7 @@ export default function AboutPage() {
 
             <CTASection
                 headline="Join Hundreds of Growing Businesses"
-                subtitle="Start your free trial today and see why businesses love OrbixDigital."
+                subtitle="Start your free trial today and see why businesses love MarketifyDigiAI."
             />
 
             <PublicFooter />

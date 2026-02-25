@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-    title: "Pricing — OrbixDigital",
+    title: "Pricing — MarketifyDigiAI",
     description: "Simple, transparent pricing for businesses of every size. Start free, scale as you grow.",
 };
 
@@ -262,7 +262,7 @@ export default function PricingPage() {
 
             <CTASection
                 headline="Ready to Get Started?"
-                subtitle="Join 500+ businesses already growing with OrbixDigital. Start your free trial today."
+                subtitle="Join 500+ businesses already growing with MarketifyDigiAI. Start your free trial today."
             />
 
             <PublicFooter />

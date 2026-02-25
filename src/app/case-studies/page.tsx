@@ -9,8 +9,8 @@ import { Container } from "@/components/ui/container";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export const metadata: Metadata = {
-    title: "Case Studies — OrbixDigital",
-    description: "See how businesses use OrbixDigital to capture leads, close deals, and scale their businesses.",
+    title: "Case Studies — MarketifyDigiAI",
+    description: "See how businesses use MarketifyDigiAI to capture leads, close deals, and scale their businesses.",
 };
 
 const CASE_STUDIES = [

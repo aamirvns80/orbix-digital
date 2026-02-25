@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { NotificationBell } from "@/components/ui/notification-bell";
 import { useSession } from "next-auth/react";
@@ -14,10 +14,8 @@ export function DashboardHeader() {
             <div className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
                 <div className="flex items-center gap-3">
                     <Link href="/" className="flex items-center gap-2">
-                        <div className="h-8 w-8 rounded-lg gradient-primary flex items-center justify-center">
-                            <Sparkles className="h-5 w-5 text-white" />
-                        </div>
-                        <span className="text-lg font-bold tracking-tight">OrbixDigital</span>
+                        <Image src="/logo.svg" alt="MarketifyDigiAI" width={32} height={32} className="rounded-lg" />
+                        <span className="text-lg font-bold tracking-tight">MarketifyDigiAI</span>
                     </Link>
                     <span className="text-muted-foreground text-sm hidden sm:inline">
                         / Dashboard

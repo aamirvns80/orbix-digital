@@ -100,7 +100,7 @@ const KNOWLEDGE_BASE: KBEntry[] = [
         answer:
             "Of course! You can reach our team anytime:\n\n" +
             "📞 **Phone:** +91 98765 43210\n" +
-            "📧 **Email:** hello@orbixdigital.com\n" +
+            "📧 **Email:** hello@marketifydigiai.com\n" +
             "💬 **WhatsApp:** Click the green button below!\n\n" +
             "Or fill out our contact form and we'll get back within 24 hours.",
         followUp: [
@@ -179,8 +179,8 @@ const KNOWLEDGE_BASE: KBEntry[] = [
     {
         keywords: ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
         answer:
-            "Hello! 👋 Welcome to OrbixDigital!\n\n" +
-            "I'm Orbix, your AI assistant. I can help you with:\n\n" +
+            "Hello! 👋 Welcome to MarketifyDigiAI!\n\n" +
+            "I'm Marketify, your AI assistant. I can help you with:\n\n" +
             "• Service information & pricing\n" +
             "• Getting a free quote\n" +
             "• Connecting with our team\n\n" +
@@ -198,7 +198,7 @@ const KNOWLEDGE_BASE: KBEntry[] = [
 const FALLBACK_ANSWER =
     "I'm not sure I understand that completely. Let me help you with some popular topics, or connect you with our team!\n\n" +
     "📞 **Call:** +91 98765 43210\n" +
-    "📧 **Email:** hello@orbixdigital.com";
+    "📧 **Email:** hello@marketifydigiai.com";
 
 const FALLBACK_FOLLOW_UP: QuickReply[] = [
     { label: "💰 Pricing", value: "pricing" },
@@ -283,7 +283,7 @@ export function ChatBot() {
                     id: "welcome",
                     role: "bot",
                     content:
-                        "Hi there! 👋 I'm **Orbix**, your AI assistant at OrbixDigital.\n\nI can help you explore our services, get pricing, or connect you with our team.\n\nWhat would you like to know?",
+                        "Hi there! 👋 I'm **Marketify**, your AI assistant at MarketifyDigiAI.\n\nI can help you explore our services, get pricing, or connect you with our team.\n\nWhat would you like to know?",
                     quickReplies: QUICK_REPLIES,
                     timestamp: new Date(),
                 },
@@ -386,8 +386,8 @@ export function ChatBot() {
                 onClick={() => (isOpen ? setIsOpen(false) : handleOpen())}
                 aria-label={isOpen ? "Close chat" : "Open chat"}
                 className={`fixed bottom-24 right-6 z-50 h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group ${isOpen
-                        ? "bg-muted text-muted-foreground hover:bg-destructive hover:text-white scale-90"
-                        : "gradient-primary text-white hover:scale-110"
+                    ? "bg-muted text-muted-foreground hover:bg-destructive hover:text-white scale-90"
+                    : "gradient-primary text-white hover:scale-110"
                     }`}
             >
                 {isOpen ? (
@@ -415,7 +415,7 @@ export function ChatBot() {
                             <Sparkles className="h-5 w-5 text-white" />
                         </div>
                         <div className="flex-1 min-w-0">
-                            <h3 className="text-white font-semibold text-sm">OrbixDigital AI</h3>
+                            <h3 className="text-white font-semibold text-sm">MarketifyDigiAI</h3>
                             <p className="text-white/70 text-xs flex items-center gap-1">
                                 <span className="h-1.5 w-1.5 rounded-full bg-green-400 inline-block" />
                                 Online • Replies instantly
@@ -441,8 +441,8 @@ export function ChatBot() {
                                     {/* Avatar */}
                                     <div
                                         className={`h-7 w-7 rounded-full flex items-center justify-center flex-shrink-0 ${msg.role === "bot"
-                                                ? "gradient-primary text-white"
-                                                : "bg-muted text-muted-foreground"
+                                            ? "gradient-primary text-white"
+                                            : "bg-muted text-muted-foreground"
                                             }`}
                                     >
                                         {msg.role === "bot" ? (
@@ -455,8 +455,8 @@ export function ChatBot() {
                                     {/* Bubble */}
                                     <div
                                         className={`max-w-[80%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${msg.role === "bot"
-                                                ? "bg-muted text-foreground rounded-tl-sm"
-                                                : "gradient-primary text-white rounded-tr-sm"
+                                            ? "bg-muted text-foreground rounded-tl-sm"
+                                            : "gradient-primary text-white rounded-tr-sm"
                                             }`}
                                     >
                                         {msg.content.split("\n").map((line, i) => (
@@ -508,7 +508,7 @@ export function ChatBot() {
                             <Phone className="h-3 w-3" /> Call
                         </a>
                         <a
-                            href="mailto:hello@orbixdigital.com"
+                            href="mailto:hello@marketifydigiai.com"
                             className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
                         >
                             <Mail className="h-3 w-3" /> Email
@@ -550,7 +550,7 @@ export function ChatBot() {
                     {/* Powered By */}
                     <div className="px-4 py-1.5 text-center border-t border-border flex-shrink-0">
                         <p className="text-[10px] text-muted-foreground/50">
-                            Powered by <span className="font-semibold">OrbixDigital AI</span>
+                            Powered by <span className="font-semibold">MarketifyDigiAI</span>
                         </p>
                     </div>
                 </div>

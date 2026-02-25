@@ -31,7 +31,7 @@ const BLOG_POSTS = [
             { type: "heading", text: "Common Mistakes to Avoid" },
             { type: "paragraph", text: "The biggest mistake businesses make is over-complicating their scoring model from day one. Start simple — you can always add complexity later. Another common pitfall is not involving your sales team in the scoring criteria. They know firsthand which leads convert." },
             { type: "heading", text: "Automating the Process" },
-            { type: "paragraph", text: "Modern CRM platforms like OrbixDigital automatically score leads based on predefined rules. This eliminates manual review, ensures consistency, and allows your team to focus on what they do best — closing deals and delivering results." },
+            { type: "paragraph", text: "Modern CRM platforms like MarketifyDigiAI automatically score leads based on predefined rules. This eliminates manual review, ensures consistency, and allows your team to focus on what they do best — closing deals and delivering results." },
             { type: "paragraph", text: "By implementing a data-driven lead scoring system, your agency can prioritize high-value opportunities, shorten sales cycles, and dramatically improve conversion rates." },
         ],
     },
@@ -147,7 +147,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = BLOG_POSTS.find((p) => p.slug === slug);
     if (!post) return { title: "Post Not Found" };
     return {
-        title: `${post.title} — OrbixDigital Blog`,
+        title: `${post.title} — MarketifyDigiAI Blog`,
         description: post.excerpt,
     };
 }
@@ -311,7 +311,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
             <CTASection
                 headline="Ready to Grow Your Agency?"
-                subtitle="Start your free trial and see how OrbixDigital can transform your pipeline."
+                subtitle="Start your free trial and see how MarketifyDigiAI can transform your pipeline."
             />
 
             <PublicFooter />
