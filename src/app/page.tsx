@@ -179,7 +179,7 @@ export default function HomePage() {
             <ScrollReveal delay={550} distance="40px">
               <div className="mt-12 relative w-full aspect-[16/9] max-w-5xl mx-auto rounded-xl overflow-hidden glow-border shadow-2xl">
                 <Image
-                  src="/images/hero-dashboard.svg"
+                  src="/images/hero-dashboard.png"
                   alt="MarketifyDigiAI Dashboard"
                   fill
                   className="object-cover"

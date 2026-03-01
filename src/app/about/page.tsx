@@ -89,7 +89,7 @@ export default function AboutPage() {
                         <div className="mt-12 relative h-[400px] w-full rounded-2xl overflow-hidden glow-border shadow-2xl">
                             {/* @ts-ignore */}
                             <Image
-                                src="/images/about-team.svg"
+                                src="/images/about-team.png"
                                 alt="MarketifyDigiAI Team"
                                 fill
                                 className="object-cover"

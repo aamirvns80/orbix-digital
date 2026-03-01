@@ -23,7 +23,7 @@ const CASE_STUDIES = [
         excerpt: "TechVista partnered with us to overhaul their SEO strategy, resulting in a 300% increase in organic traffic and 150% more qualified leads.",
         tags: ["SEO", "Content Marketing"],
         gradient: "from-blue-500 to-cyan-400",
-        image: "/images/case-studies/growthlab.svg",
+        image: "/images/case-studies/growthlab.png",
     },
     {
         slug: "brandshakti-lead-gen",
@@ -34,7 +34,7 @@ const CASE_STUDIES = [
         excerpt: "A multi-channel lead generation campaign that combined PPC, social media, and email marketing to supercharge their pipeline.",
         tags: ["PPC", "Social Media", "Email"],
         gradient: "from-violet-500 to-purple-400",
-        image: "/images/case-studies/brightwave.svg",
+        image: "/images/case-studies/brightwave.png",
     },
     {
         slug: "pixelcraft-rebrand",
@@ -45,7 +45,7 @@ const CASE_STUDIES = [
         excerpt: "A full rebrand including visual identity, messaging, website redesign, and launch campaign that repositioned them as market leaders.",
         tags: ["Brand Strategy", "Web Design"],
         gradient: "from-amber-500 to-orange-400",
-        image: "/images/case-studies/pixel.svg",
+        image: "/images/case-studies/pixel.png",
     },
     {
         slug: "finedge-enterprise-pipeline",
@@ -56,7 +56,7 @@ const CASE_STUDIES = [
         excerpt: "Built an automated lead scoring and nurturing system that generated ₹2Cr in qualified pipeline within the first quarter.",
         tags: ["Automation", "Analytics"],
         gradient: "from-emerald-500 to-teal-400",
-        image: "/images/case-studies/finedge.svg",
+        image: "/images/case-studies/finedge.png",
     },
     {
         slug: "sunrise-wellness-video",
@@ -67,7 +67,7 @@ const CASE_STUDIES = [
         excerpt: "A video production and social media strategy that drove 4x engagement rates and established them as a thought leader in digital health.",
         tags: ["Video", "Social Media"],
         gradient: "from-pink-500 to-rose-400",
-        image: "/images/case-studies/sunrise.svg",
+        image: "/images/case-studies/sunrise.png",
     },
     {
         slug: "ecomking-revenue-growth",
@@ -78,7 +78,7 @@ const CASE_STUDIES = [
         excerpt: "A full-funnel campaign combining paid ads, email sequences, and landing page optimization that generated ₹75L in new revenue.",
         tags: ["PPC", "Email", "CRO"],
         gradient: "from-sky-500 to-blue-400",
-        image: "/images/case-studies/ecomking.svg",
+        image: "/images/case-studies/ecomking.png",
     },
 ];
 

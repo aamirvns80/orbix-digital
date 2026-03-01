@@ -23,7 +23,7 @@ const BLOG_POSTS = [
         readTime: "8 min read",
         category: "Lead Management",
         gradient: "from-blue-500 to-cyan-400",
-        image: "/images/blog/lead-scoring.svg",
+        image: "/images/blog/lead-scoring.png",
     },
     {
         slug: "seo-trends-2026",
@@ -34,7 +34,7 @@ const BLOG_POSTS = [
         readTime: "12 min read",
         category: "SEO",
         gradient: "from-violet-500 to-purple-400",
-        image: "/images/blog/seo-trends.svg",
+        image: "/images/blog/seo-trends.png",
     },
     {
         slug: "agency-crm-comparison",
@@ -45,7 +45,7 @@ const BLOG_POSTS = [
         readTime: "10 min read",
         category: "Tools & Tech",
         gradient: "from-amber-500 to-orange-400",
-        image: "/images/blog/crm-comparison.svg",
+        image: "/images/blog/crm-comparison.png",
     },
     {
         slug: "email-marketing-automation",
@@ -56,7 +56,7 @@ const BLOG_POSTS = [
         readTime: "9 min read",
         category: "Email Marketing",
         gradient: "from-emerald-500 to-teal-400",
-        image: "/images/blog/email-automation.svg",
+        image: "/images/blog/email-automation.png",
     },
     {
         slug: "social-media-roi",
@@ -67,7 +67,7 @@ const BLOG_POSTS = [
         readTime: "7 min read",
         category: "Social Media",
         gradient: "from-pink-500 to-rose-400",
-        image: "/images/blog/social-roi.svg",
+        image: "/images/blog/social-roi.png",
     },
     {
         slug: "scaling-agency-operations",
@@ -78,7 +78,7 @@ const BLOG_POSTS = [
         readTime: "11 min read",
         category: "Agency Growth",
         gradient: "from-sky-500 to-blue-400",
-        image: "/images/blog/scaling-ops.svg",
+        image: "/images/blog/scaling-ops.png",
     },
 ];
 

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "MarketifyDigiAI — Marketing Agency Management Platform",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "MarketifyDigiAI — Marketing Agency Management Platform",
     description:
       "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
     creator: "@MarketifyDigiAI",
   },
   robots: {

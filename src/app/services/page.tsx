@@ -38,7 +38,7 @@ const SERVICES = [
         ],
         color: "text-blue-500",
         bgColor: "bg-blue-500/10",
-        image: "/images/services/seo-marketing.svg",
+        image: "/images/services/seo.png",
         price: "Starts at ₹12,000/mo",
     },
     {
@@ -54,7 +54,7 @@ const SERVICES = [
         ],
         color: "text-amber-500",
         bgColor: "bg-amber-500/10",
-        image: "/images/services/ppc.svg",
+        image: "/images/services/ppc.png",
         price: "Starts at ₹8,000/mo",
     },
     {
