@@ -68,7 +68,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                                             Get a Free Quote <ArrowRight className="h-5 w-5" />
                                         </Button>
                                     </Link>
-                                    <a href="https://wa.me/91860456223" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://wa.me/918604560223" target="_blank" rel="noopener noreferrer">
                                         <Button size="lg" variant="outline" className="gap-2">
                                             <MessageCircle className="h-5 w-5" /> WhatsApp Us
                                         </Button>
