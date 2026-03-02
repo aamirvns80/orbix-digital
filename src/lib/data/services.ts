@@ -90,7 +90,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-blue-500",
         bgColor: "bg-blue-500/10",
         gradient: "from-blue-500 to-cyan-400",
-        image: "/images/services/seo-marketing.svg",
+        image: "/images/services/seo.png",
         startingPrice: "₹12,000/mo",
         subServices: [
             {
@@ -165,7 +165,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-orange-500",
         bgColor: "bg-orange-500/10",
         gradient: "from-orange-500 to-amber-400",
-        image: "/images/services/ppc.svg",
+        image: "/images/services/ppc.png",
         startingPrice: "₹8,000/mo",
         subServices: [
             {
@@ -240,7 +240,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-pink-500",
         bgColor: "bg-pink-500/10",
         gradient: "from-pink-500 to-rose-400",
-        image: "/images/services/social-media.svg",
+        image: "/images/services/social.png",
         startingPrice: "₹15,000/mo",
         subServices: [
             {
@@ -315,7 +315,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-cyan-500",
         bgColor: "bg-cyan-500/10",
         gradient: "from-cyan-500 to-blue-400",
-        image: "/images/services/web-dev.svg",
+        image: "/images/services/web.png",
         startingPrice: "₹20,000",
         subServices: [
             {
@@ -390,7 +390,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-yellow-500",
         bgColor: "bg-yellow-500/10",
         gradient: "from-yellow-500 to-orange-400",
-        image: "/images/services/email.svg",
+        image: "/images/services/email.png",
         startingPrice: "₹5,000/mo",
         subServices: [
             {
@@ -465,7 +465,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-violet-500",
         bgColor: "bg-violet-500/10",
         gradient: "from-violet-500 to-purple-400",
-        image: "/images/services/brand.svg",
+        image: "/images/services/brand.png",
         startingPrice: "₹15,000",
         subServices: [
             {
@@ -540,7 +540,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-red-500",
         bgColor: "bg-red-500/10",
         gradient: "from-red-500 to-pink-400",
-        image: "/images/services/video.svg",
+        image: "/images/services/video.png",
         startingPrice: "₹10,000/video",
         subServices: [
             {
@@ -615,7 +615,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-emerald-500",
         bgColor: "bg-emerald-500/10",
         gradient: "from-emerald-500 to-teal-400",
-        image: "/images/services/ai-automation.svg",
+        image: "/images/services/ai-automation.png",
         startingPrice: "₹8,000/mo",
         subServices: [
             {
@@ -676,7 +676,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-rose-500",
         bgColor: "bg-rose-500/10",
         gradient: "from-rose-500 to-pink-400",
-        image: "/images/services/influencer.svg",
+        image: "/images/services/influencer.png",
         startingPrice: "₹20,000/campaign",
         subServices: [
             {
@@ -751,7 +751,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-indigo-500",
         bgColor: "bg-indigo-500/10",
         gradient: "from-indigo-500 to-violet-400",
-        image: "/images/services/celebrity.svg",
+        image: "/images/services/celebrity.png",
         startingPrice: "₹2,00,000/campaign",
         subServices: [
             {
@@ -826,7 +826,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-fuchsia-500",
         bgColor: "bg-fuchsia-500/10",
         gradient: "from-fuchsia-500 to-purple-400",
-        image: "/images/services/ai-influencer.svg",
+        image: "/images/services/ai-influencer.png",
         startingPrice: "₹10,000/mo",
         subServices: [
             {
@@ -902,7 +902,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         color: "text-green-500",
         bgColor: "bg-green-500/10",
         gradient: "from-green-500 to-emerald-400",
-        image: "/images/services/whatsapp.svg",
+        image: "/images/services/whatsapp.png",
         startingPrice: "₹3,000/mo",
         subServices: [
             {

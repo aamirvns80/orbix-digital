@@ -70,7 +70,7 @@ const SERVICES = [
         ],
         color: "text-pink-500",
         bgColor: "bg-pink-500/10",
-        image: "/images/services/social.svg",
+        image: "/images/services/social.png",
         price: "Starts at ₹15,000/mo",
     },
     {
@@ -86,7 +86,7 @@ const SERVICES = [
         ],
         color: "text-emerald-500",
         bgColor: "bg-emerald-500/10",
-        image: "/images/services/web.svg",
+        image: "/images/services/web.png",
         price: "Starts at ₹20,000",
     },
     {
@@ -102,7 +102,7 @@ const SERVICES = [
         ],
         color: "text-violet-500",
         bgColor: "bg-violet-500/10",
-        image: "/images/services/email.svg",
+        image: "/images/services/email.png",
         price: "Starts at ₹5,000/mo",
     },
     {
@@ -118,7 +118,7 @@ const SERVICES = [
         ],
         color: "text-orange-500",
         bgColor: "bg-orange-500/10",
-        image: "/images/services/brand.svg",
+        image: "/images/services/brand.png",
         price: "Starts at ₹15,000",
     },
     {
@@ -134,7 +134,7 @@ const SERVICES = [
         ],
         color: "text-red-500",
         bgColor: "bg-red-500/10",
-        image: "/images/services/video.svg",
+        image: "/images/services/video.png",
         price: "Starts at ₹10,000/video",
     },
     {
@@ -150,7 +150,7 @@ const SERVICES = [
         ],
         color: "text-emerald-500",
         bgColor: "bg-emerald-500/10",
-        image: "/images/services/ai-automation.svg",
+        image: "/images/services/ai-automation.png",
         price: "Starts at ₹8,000/mo",
     },
     {
@@ -166,7 +166,7 @@ const SERVICES = [
         ],
         color: "text-rose-500",
         bgColor: "bg-rose-500/10",
-        image: "/images/services/influencer.svg",
+        image: "/images/services/influencer.png",
         price: "Starts at ₹20,000/campaign",
     },
     {
@@ -182,7 +182,7 @@ const SERVICES = [
         ],
         color: "text-indigo-500",
         bgColor: "bg-indigo-500/10",
-        image: "/images/services/celebrity.svg",
+        image: "/images/services/celebrity.png",
         price: "Starts at ₹2,00,000/campaign",
     },
     {
@@ -200,7 +200,7 @@ const SERVICES = [
         ],
         color: "text-fuchsia-500",
         bgColor: "bg-fuchsia-500/10",
-        image: "/images/services/ai-influencer.svg",
+        image: "/images/services/ai-influencer.png",
         price: "Starts at ₹10,000/mo",
     },
     {
@@ -218,7 +218,7 @@ const SERVICES = [
         ],
         color: "text-green-500",
         bgColor: "bg-green-500/10",
-        image: "/images/services/whatsapp.svg",
+        image: "/images/services/whatsapp.png",
         price: "Starts at ₹3,000/mo",
     },
 ];
