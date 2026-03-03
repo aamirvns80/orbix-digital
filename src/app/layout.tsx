@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     icon: "/favicon.svg",
     apple: "/apple-icon.svg",
   },
+  verification: {
+    google: "A9TiwHL4vPukkJzQQFKD6b2sSPZJN8ElXh7VWMBPzXU",
+  },
 };
 
 // JSON-LD structured data for the organization
