@@ -12,11 +12,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://MarketifyDigiAI.com
 
 export const metadata: Metadata = {
   title: {
-    default: "MarketifyDigiAI — Marketing Agency Management Platform",
-    template: "%s | MarketifyDigiAI",
+    default: "AI Powered Digital Marketing Services in India | Marketify DigiAI",
+    template: "%s | Marketify DigiAI",
   },
   description:
-    "Full-service digital marketing platform. Manage leads, clients, content, and campaigns from a single dashboard. Trusted by 500+ businesses.",
+    "Marketify DigiAI provides AI-powered digital marketing services including SEO, Paid Ads, Social Media and Web Development for growing businesses.",
   keywords: [
     "marketing agency",
     "CRM",
@@ -34,23 +34,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "MarketifyDigiAI",
-    title: "MarketifyDigiAI — Marketing Agency Management Platform",
+    title: "AI Powered Digital Marketing Services in India | Marketify DigiAI",
     description:
-      "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
+      "Marketify DigiAI provides AI-powered digital marketing services including SEO, Paid Ads, Social Media and Web Development for growing businesses.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "MarketifyDigiAI — Marketing Agency Management Platform",
+        alt: "AI Powered Digital Marketing Services in India | Marketify DigiAI",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "MarketifyDigiAI — Marketing Agency Management Platform",
+    title: "AI Powered Digital Marketing Services in India | Marketify DigiAI",
     description:
-      "Full-service digital marketing platform. Manage leads, clients, and campaigns. Trusted by 500+ businesses.",
+      "Marketify DigiAI provides AI-powered digital marketing services including SEO, Paid Ads, Social Media and Web Development for growing businesses.",
     images: ["/og-image.png"],
     creator: "@MarketifyDigiAI",
   },
