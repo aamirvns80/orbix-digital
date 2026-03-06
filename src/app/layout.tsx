@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   description:
     "Marketify DigiAI provides AI-powered digital marketing services including SEO, Paid Ads, Social Media and Web Development for growing businesses.",
   keywords: [
-    "marketing agency",
+    "marketing services",
     "CRM",
     "lead management",
     "content management",
-    "agency platform",
+    "marketing platform",
     "marketing automation",
     "client management",
   ],
