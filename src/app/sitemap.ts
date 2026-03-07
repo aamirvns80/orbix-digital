@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { getPosts } from "@/lib/mdx";
 
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://MarketifyDigiAI.com";
 
@@ -9,15 +10,6 @@ const CASE_STUDY_SLUGS = [
     "finedge-enterprise-pipeline",
     "sunrise-health-video",
     "ecomking-revenue-growth",
-];
-
-const BLOG_SLUGS = [
-    "lead-scoring-guide",
-    "seo-trends-2026",
-    "agency-crm-comparison",
-    "email-marketing-automation",
-    "social-media-roi",
-    "scaling-agency-operations",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -36,8 +28,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    const blogPosts = BLOG_SLUGS.map((slug) => ({
-        url: `${BASE_URL}/blog/${slug}`,
+    const posts = getPosts();
+    const blogPosts = posts.map((post) => ({
+        url: `${BASE_URL}/blog/${post.slug}`,
+        lastModified: new Date(post.metadata.date),
         changeFrequency: "monthly" as const,
         priority: 0.6,
     }));
